@@ -1,6 +1,7 @@
-/*estilo general
+/*estilo general*/
 * {
-*/
+    box-sizing: border-box;
+}
 
 /*estilo body*/
 body {
@@ -10,4 +11,21 @@ body {
 /*estilo header*/
 header {
     background-color: black;
+}
+
+/* Revisar en qué etiqueta ponemos estas propiedades para
+mover la caja de usuario   
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+*/
+
+header nav a {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ABF44D;
 }
