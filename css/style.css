@@ -1,3 +1,13 @@
-*{
+/*estilo general
+* {
+*/
+
+/*estilo body*/
+body {
+    margin: 0;
+}
+
+/*estilo header*/
+header {
     background-color: black;
 }
