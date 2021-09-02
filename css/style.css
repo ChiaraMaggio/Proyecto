@@ -29,3 +29,79 @@ header nav a {
     text-align: center;
     background-color: #ABF44D;
 }
+
+/*de lo general a lo particular*/
+
+/*
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.main-container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/*el 0 es para que los márgenes de arriba y abajo sean nulos, 
+y acomode lo demas automáticamente*/ 
+
+/*
+a{
+    text-decoration: none;
+    color:#444;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*header*/
+
+/*
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+}
+
+.nav-login a{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.burguer-menu{
+    display: none;
+}
+
+.nav-lista{
+    background-color:yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-lista li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    color: white;
+    width: 180px;
+    height: 50px;
+}
+*/
