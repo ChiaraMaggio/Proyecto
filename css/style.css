@@ -1,0 +1,44 @@
+/*estilo general*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*estilo body*/
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*estilo header*/
+header {
+    background-color: black;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header nav a {
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color:black;
+}
+
+.login {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     padding: 10px 0 0 0;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
