@@ -1,13 +1,12 @@
 /*estilo general*/
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 /*estilo body*/
 body {
     font-family: 'Bebas Neue', cursive;
+    margin: 0;
 }
 
 /*estilo header*/
@@ -42,3 +41,20 @@ header nav a {
     flex-direction: row;
     justify-content: space-between;
 }
+
+footer{
+    background-color: black;
+}
+
+footer h2 {
+    color: white;
+}
+
+.contenedor-footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
