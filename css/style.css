@@ -11,7 +11,7 @@ body {
 
 /*estilo header*/
 header {
-    background-color: black;
+    background-color:black;
 }
 
 .contenedor {
@@ -29,6 +29,12 @@ header nav a {
     background-color:black;
 }
 
+header nav form button {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
 .login {
      display: flex;
      flex-direction: row;
@@ -42,12 +48,14 @@ header nav a {
     justify-content: space-between;
 }
 
-footer{
+footer {
     background-color: black;
 }
 
-footer h2 {
+footer h3 {
     color: white;
+    margin: 0;
+    padding: 5px 0 5px 0;
 }
 
 .contenedor-footer {

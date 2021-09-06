@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -12,17 +14,21 @@
     <div>
     <header>
 		<div class="contenedor">
-            <nav class="login">
+            <!--<nav class="login">
                 <a href="#">Login</a>
                 <a href="#">Registro</a>
-            </nav>
+            </nav>-->
 			<img width="145" height="145" src="img/logoTCR.jpg" alt="Logo">
 			<nav class="secciones">
 				<a href="home.html" class="activo">HOME</a>
 				<a href="generos.html">GÉNEROS</a>
 				<a href="detallespys.html">SERIES Y PELÍCULAS</a>
 				<a href="favoritos.html">FAVORITOS</a>
-                <a href="resultados.html"><i class="fas fa-search"></i></a>
+                <form action="resultados.html" method="GET">    
+                    <div>
+                        <input type="buscador" name="buscador" value="" id="buscador" placeholder="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button> 
+                    </div>  
 			</nav>
 		</div>
 	</header>
@@ -47,9 +53,9 @@
     </main>
     <footer>
         <div class="contenedor-footer">
-            <h2>Chiara Maggio</h2>
-            <h2>Rodrigo Vaca Guzmán Nacif</h2>
-            <h2>Tiziana Maguna</h2>
+            <h3>Chiara Maggio</h3>
+            <h3>Rodrigo Vaca Guzmán Nacif</h3>
+            <h3>Tiziana Maguna</h3>
         </div>
     </footer>
     </div>
