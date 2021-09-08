@@ -4,10 +4,30 @@
     box-sizing: border-box;
 }
 
+/*configuración y reset de etiquetas que podemos usar*/
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h3, h4 {
+    margin: 0;
+    color: white;
+}
+
 /*estilo body*/
 body {
-    font-family: 'Bebas Neue', cursive;
     margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
 }
 
 /*estilo header*/
@@ -16,16 +36,15 @@ header {
 }
 
 .contenedor {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
 header nav a {
     display: inline-block;
-    width: 140px;
+    width: 140px; /*pasar de pixeles a medida relativa*/
     height: 30px;
     color: white;
-    text-decoration: none;
     text-align: center;
     background-color:black;
 }
@@ -36,12 +55,12 @@ header nav form button {
     color: white;
 }
 
-.login {
+/*.login {
      display: flex;
      flex-direction: row;
      justify-content: flex-end;
      padding: 10px 0 0 0;
-}
+}*/
 
 .secciones {
     display: flex;
@@ -50,25 +69,20 @@ header nav form button {
 }
 
 /*estilo main*/
+.contenedor-main {
+    width: 95%;
+    margin: auto;
+}
 
 main section h3 {
-    margin: 0;
-    padding: 5px 0 5px 25px;
-}
-
-main section article h4 {
-    margin: 0;
-    padding: 5px 0 5px 0;
-}
-
-main section article p {
-    margin: 0;
+    padding: 20px 0px
 }
 
 .contenedor-artículo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /*estilo footer*/
@@ -77,13 +91,11 @@ footer {
 }
 
 footer h3 {
-    color: white;
-    margin: 0;
-    padding: 5px 0 5px 0;
+    padding: 20px 0;
 }
 
 .contenedor-footer {
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -91,3 +103,15 @@ footer h3 {
 }
 
 
+
+
+
+/*resposive tablet*/
+@media (max-width:768px) {
+    
+}
+
+/*resposive mobile*/
+@media (max-width:320px) {
+    
+} 
