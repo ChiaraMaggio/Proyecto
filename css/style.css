@@ -107,6 +107,13 @@ footer h3 {
     justify-content: space-between;
 }
 
+/*diseño responsive TABLETS*/
+@media (max-width:768px) {
+    /*HOME*/
+    
+
+
+
 /* genero peliculas y series */
 
 
