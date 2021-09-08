@@ -74,7 +74,7 @@ header nav form button {
 }
 
 main section h3 {
-    padding: 20px 0px
+    padding: 20px 0px /*hay que chequear si el padding se expresa en porcentaje*/
 }
 
 .contenedor-artículo {
