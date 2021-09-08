@@ -48,6 +48,28 @@ header nav form button {
     justify-content: space-between;
 }
 
+/*estilo main*/
+
+main section h3 {
+    margin: 0;
+    padding: 5px 0 5px 10px;
+}
+
+main section article h4 {
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+main section article p {
+    margin: 0;
+}
+
+.contenedor-artículo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 /*estilo footer*/
 footer {
     background-color: black;
