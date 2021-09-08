@@ -117,10 +117,9 @@ footer h3 {
 /* genero peliculas y series */
 
 
-.contenedor-generos{
+.contenedor-generos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: aqua;
-   
+    background-color: aqua;  
 }
