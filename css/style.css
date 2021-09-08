@@ -107,16 +107,13 @@ footer h3 {
     justify-content: space-between;
 }
 
+/* genero peliculas y series */
 
 
-
-
-/*resposive tablet*/
-@media (max-width:768px) {
-    
+.contenedor-generos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aqua;
+   
 }
-
-/*resposive mobile*/
-@media (max-width:320px) {
-    
-} 
