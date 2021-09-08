@@ -1,3 +1,8 @@
+/* A tener en cuenta para diseño responsive:
+            - las medidas de la prop. height no se expresan en porcentaje.
+            - para modificar las medidas de prop. como width, se observa el tamaño
+            de la etiqueta que queremos modificar, el del contenedor que la lleva
+            dentro (representa el 100%), y se hace la regla de tres simple. */ 
 
 /*estilo general*/
 * {
@@ -42,7 +47,7 @@ header {
 
 header nav a {
     display: inline-block;
-    width: 140px; /*pasar de pixeles a medida relativa*/
+    width: 13.33%; /*140px*/
     height: 30px;
     color: white;
     text-align: center;
@@ -68,14 +73,14 @@ header nav form button {
     justify-content: space-between;
 }
 
-/*estilo main*/
+/*estilo main HOME*/
 .contenedor-main {
     width: 95%;
     margin: auto;
 }
 
 main section h3 {
-    padding: 20px 0px
+    padding: 20px 0px /*hay que chequear si el padding se expresa en porcentaje*/
 }
 
 .contenedor-artículo {
