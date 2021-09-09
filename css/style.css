@@ -1,15 +1,9 @@
-/* A tener en cuenta para diseño responsive:
-            - las medidas de la prop. height no se expresan en porcentaje.
-            - para modificar las medidas de prop. como width, se observa el tamaño
-            de la etiqueta que queremos modificar, el del contenedor que la lleva
-            dentro (representa el 100%), y se hace la regla de tres simple. */ 
-
-/*estilo general*/
+/* estilo general */
 * {
     box-sizing: border-box;
 }
 
-/*configuración y reset de etiquetas que podemos usar*/
+/* configuración y reset de etiquetas que podemos usar */
 ul, ol {
     margin: 0;
     padding: 0;
@@ -23,19 +17,19 @@ a {
     text-decoration: none;
 }
 
-p, h3, h4 {
+p, h2, h3, h4 {
     margin: 0;
     color: white;
 }
 
-/*estilo body*/
+/* estilo body */
 body {
     margin: 0;
     font-family: 'Bebas Neue', cursive;
-    background-color: black;
+    background-color: black;  
 }
 
-/*estilo header*/
+/*estilo header */
 header {
     background-color:black;
 }
@@ -51,7 +45,7 @@ header {
 
 header nav a {
     display: inline-block;
-    width: 13.33%; /*140px*/
+    width: 140px; /*pasar de pixeles a medida relativa */
     height: 30px;
     color: white;
     text-align: center;
@@ -134,7 +128,7 @@ footer h3 {
 /*diseño responsive CELULAR*/
 @media (max-width:420px) {
     /*HOME*/
-    .contenedor{
+    .contenedor {
         width: 90%;
     }
 
@@ -178,14 +172,73 @@ footer h3 {
     }
 }    
 
+/* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
 
+.portada {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 10px 10px;
+    margin: 30px;
+    background-color: rosybrown;
+    
+}  
+
+.titulo-serie {
+    color: white;
+    margin: 20px;
+}
+
+ .descripción {
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+
+   /*  display: inline-block;
+    justify-content: space-around;
+    padding: 15px 10px;
+    margin: 30px;
+    background-color: rosybrown;  */
+  } 
+
+.características {
+    display: block;
+    justify-content: center;
+    color: white;
+    /* padding: 7px 0;
+    margin: 20px; */
+    background-color: seagreen;
+}
+
+.boton {
+    display: inline-block;
+    margin: 20px;
+    width: 140px; 
+    height: 30px;
+    color: white;
+    align-items: center;
+    background-color:grey
+    
+}
+
+.trailer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: slateblue;
+
+}
 
 /* genero peliculas y series */
 
 
-.contenedor-generos {
+.contenedor-géneros {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: aqua;  
+    flex-wrap: wrap;
+}
+
+.artículo-género {
+    padding: 0 10px;
 }
