@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-p, h3, h4 {
+p, h2, h3, h4 {
     margin: 0;
     color: white;
 }
@@ -26,7 +26,7 @@ p, h3, h4 {
 body {
     margin: 0;
     font-family: 'Bebas Neue', cursive;
-    background-color: black;
+    background-color: black;  
 }
 
 /*estilo header */
@@ -100,10 +100,14 @@ footer h3 {
     flex-direction: row;
     justify-content: space-between;
 }
-
-.contenedor-generos {
+/* estilo main GENEROS*/
+.contenedor-géneros {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.artículo-género {
+    padding: 0 10px;
+   
 }
