@@ -29,7 +29,7 @@ body {
     background-color: black;  
 }
 
-/*estilo header */
+/* estilo header */
 header {
     background-color:black;
 }
@@ -89,7 +89,7 @@ header nav form button {
     max-width: 6.51%; /*13.34px*/
 }
 
-/*estilo main HOME*/
+/* estilo main HOME */
 .contenedor-main {
     width: 95%;
     margin: auto;
@@ -106,7 +106,7 @@ main section h3 {
     flex-wrap: wrap;
 }
 
-/*estilo footer*/
+/* estilo footer */
 footer {
     background-color: black;
 }
@@ -125,9 +125,9 @@ footer h3 {
 }
 
 
-/*diseño responsive CELULAR*/
+/* diseño responsive MOBILE LAST */
 @media (max-width:420px) {
-    /*HOME*/
+    /* HOME */
     .contenedor {
         width: 90%;
     }
@@ -171,6 +171,8 @@ footer h3 {
         width: 90%;
     }
 }    
+
+
 
 /* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
 
