@@ -103,9 +103,63 @@ footer h3 {
 }
 
 
+/* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
 
+.portada{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 10px 10px;
+    margin: 30px;
+    background-color: rosybrown;
+    
+}  
 
+.titulo-serie {
+    color: white;
+    margin: 20px;
+}
 
+ .descripción {
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+
+   /*  display: inline-block;
+    justify-content: space-around;
+    padding: 15px 10px;
+    margin: 30px;
+    background-color: rosybrown;  */
+  } 
+
+.características {
+    display: block;
+    justify-content: center;
+    color: white;
+    /* padding: 7px 0;
+    margin: 20px; */
+    background-color: seagreen;
+}
+
+.boton {
+    display: inline-block;
+    margin: 20px;
+    width: 140px; 
+    height: 30px;
+    color: white;
+    align-items: center;
+    background-color:grey
+    
+}
+
+.trailer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: slateblue;
+
+}
 /*resposive tablet*/
 @media (max-width:768px) {
     
