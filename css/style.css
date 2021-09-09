@@ -45,6 +45,10 @@ header {
     margin: auto;
 }
 
+.nav-barritas {
+    display: none;
+}
+
 header nav a {
     display: inline-block;
     width: 13.33%; /*140px*/
@@ -55,6 +59,8 @@ header nav a {
 }
 
 header nav form button {
+    margin: 0;
+    padding: 0;
     border: none;
     background-color: black;
     color: white;
@@ -73,6 +79,22 @@ header nav form button {
     justify-content: space-between;
 }
 
+.buscador {
+    max-width: 19.46%; /*204.91px*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#input {
+    max-width: 93.49%; /*163.66px*/
+}
+
+#button {
+    max-width: 6.51%; /*13.34px*/
+}
+
 /*estilo main HOME*/
 .contenedor-main {
     width: 95%;
@@ -80,7 +102,7 @@ header nav form button {
 }
 
 main section h3 {
-    padding: 20px 0px /*hay que chequear si el padding se expresa en porcentaje*/
+    padding: 20px 0px 
 }
 
 .contenedor-artículo {
@@ -97,6 +119,7 @@ footer {
 
 footer h3 {
     padding: 20px 0;
+    text-align: center;
 }
 
 .contenedor-footer {
@@ -107,11 +130,53 @@ footer h3 {
     justify-content: space-between;
 }
 
-/*diseño responsive TABLETS*/
-@media (max-width:768px) {
+
+/*diseño responsive CELULAR*/
+@media (max-width:420px) {
     /*HOME*/
-}
-    
+    .contenedor{
+        width: 90%;
+    }
+
+    .nav-barritas {
+        display:inline-block;
+        color: white;
+    }
+
+    .secciones-ocultas {
+        display: none;
+    }
+
+    #input {
+        max-width: none;
+        padding: 5px 0;
+    }
+
+    #button {
+        max-width: none;
+        padding: 5px;
+    }
+
+    .contenedor-main {
+        width: 90%
+    }
+
+    .nombre-estreno {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2px 0 15px 0;
+    }
+
+    .contenedor-artículo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-footer {
+        width: 90%;
+    }
+}    
 
 
 
