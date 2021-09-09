@@ -39,6 +39,16 @@ header {
     margin: auto;
 }
 
+.logo {
+    max-width: 100%;
+    height: 151px;
+}
+
+.img {
+    width: 13,77%;
+    height: 145px;
+}
+
 .nav-barritas {
     display: none;
 }
