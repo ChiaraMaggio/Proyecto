@@ -22,6 +22,14 @@ p, h2, h3, h4 {
     color: white;
 }
 
+form button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
 /* estilo body */
 body {
     margin: 0;
@@ -60,14 +68,6 @@ header nav a {
     color: white;
     text-align: center;
     background-color:black;
-}
-
-header nav form button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: black;
-    color: white;
 }
 
 /*.login {
@@ -183,70 +183,53 @@ footer h3 {
 }    
 
 
-
 /* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
+ 
+/* estilo main DETAIL-MOVIE */
 
-<<<<<<< HEAD
-/* Float-left para que dentro del contenedor la imagen este flotando a a izquierda y sus demás elementos a la derecha. Margin-right, para crear un espacio entre la foto y el texto  */
- .posicionamiento{
-  float: left;
-  background-color: seagreen;
-  margin-right: 15px;
-  
-=======
+.caja-película {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+}
+
 .portada {
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-    padding: 10px 10px;
-    margin: 30px;
-    background-color: rosybrown;
-    
->>>>>>> ad085924bb872f5cf66d148dfdda649dc199b8ae
-}  
-
-.caja-pelicula {
-    background-color: green;
-    padding-left: 70px;
-    padding-right: 70px;
+    max-width: 28.24%;
+    height: 336px;
 }
 
-
-.titulo-serie {
-    color: white;
-}
-
- .descripción {
-    display: flex;
+.descripción {
+    padding: 0 0 0 10px;
+    text-align: justify;
     font-size: 18px;
-    color: white;
-    background-color: salmon;
-    padding-right: 70px
-
-} 
-            
-.características {
-    display: block;
-    justify-content: center;
-    color: white;
-    padding: 7px 0;
-    margin: 20px; 
-    background-color: red
 }
 
-.reproductores {
+.contenedor-desc-lis {
+    flex-direction: column;
+
+}
+
+ul {
+    padding: 15px 0 0 0;
+}
+
+ul li span {
+    padding: 0 2px;
+}
+
+.lista {
     display: flex;
-    justify-content: center;
+    color: white;
+    padding: 0 0 0 10px;
 }
 
-.boton {
-    display: inline-block;
-    margin: 20px;
-    width: 140px; 
-    height: 30px;
-    color: white;
-    background-color:grey
+.form-fav {
+    display: flex;
+    flex-direction: row;
 }
+
+/*esto no pude revisarlo*/
 
 .trailer {
     display: flex;
@@ -254,18 +237,7 @@ footer h3 {
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: slateblue;
-
-<<<<<<< HEAD
-/*resposive tablet*/
-@media (max-width:768px) {
-    
 }
-=======
-}
-
-/* genero peliculas y series */
-
->>>>>>> ad085924bb872f5cf66d148dfdda649dc199b8ae
 
 .contenedor-géneros {
     display: flex;
