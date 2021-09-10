@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href=""><!-- necesito el link para el corazón de font awesome -->
     <title>Home</title>
 </head>
 
@@ -20,16 +19,22 @@
                 <a href="#">Login</a>
                 <a href="#">Registro</a>
             </nav>-->
-			<img width="145" height="145" src="img/logoTCR.jpg" alt="Logo">
-			<nav class="secciones">
-				<a href="home.html" class="activo">HOME</a>
-				<a href="generos.html">GÉNEROS</a>
-				<a href="favoritos.html">FAVORITOS</a>
-                <form action="resultados.html" method="GET">    
-                    <div>
+			<div class="logo">
+                <img class="img" src="img/logoTCR.jpg" alt="Logo">
+            </div>
+            <a href="#" class="nav-barritas"><span class="fa fa-bars"></span></a>
+            <nav class="secciones">
+                <a href="home.html" class="secciones-ocultas" >HOME</a>
+				<a href="generos.html" class="secciones-ocultas">GÉNEROS</a>
+				<a href="favoritos.html" class="secciones-ocultas">FAVORITOS</a>
+                <form action="resultados.html" method="GET" class="buscador">    
+                    <div id="input">
                         <input type="buscador" name="buscador" value="" id="buscador" placeholder="Buscar">
+                    </div>
+                    <div id="button">
                         <button type="submit"><i class="fas fa-search"></i></button> 
-                    </div>  
+                    </div>
+                </form>     
 			</nav>
 		</div>
 	</header>
@@ -43,49 +48,50 @@
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="./img/Posters películas/elconjuro3.jpg" alt="poster 1"></a>
-                            <h4>El Conjuro 3</h4>
-                            <p>2021</p>
-                            <!-- Formulario para marcar contenido como favoritos
-                                <form action="favoritos.html" method="GET">
-                                <div>
-                                    <input type="checkbox" name="favoritos" value="favorito">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <button type="submit"></button>
-
-                                </div>
-                            </form>-->
+                            <div class="nombre-estreno">
+                                <h4>El Conjuro 3</h4>
+                                <p>2021</p>
+                            </div>
                         </div>
                     </article>  
                 
                     <article>
                         <div>
                             <a href="detail-serie.html"><img src="./img/Posters series/obx.jpg" alt="poster 2"></a>
-                            <h4>Outer Banks</h4>
-                            <p>2020</p>
+                            <div class="nombre-estreno">
+                                <h4>Outer Banks</h4>
+                                <p>2020</p>
+                            </div>
                         </div>
                     </article>
                 
                     <article>
                         <div>
                             <a href="detail-serie.html"><img src="./img/Posters series/sexeducation.jpg" alt="poster 3"></a>
-                            <h4>Sex Education</h4>
-                            <p>2019</p>
+                            <div class="nombre-estreno">
+                                <h4>Sex Education</h4>
+                                <p>2019</p>
+                            </div>
                         </div>
                     </article>
 
                     <article>
                         <div>
                             <a href="detail-serie.html"><img src="img/Posters series/hillhouse.jpg" alt="poster 4"></a>
-                            <h4>La Maldición de Hill House</h4>
-                            <p>2018</p>
+                            <div class="nombre-estreno">    
+                                <h4>La Maldición de Hill House</h4>
+                                <p>2018</p>
+                            </div>
                         </div>
                     </article>
                     
                     <article>
                         <div>
                             <a href="detail-serie.html"><img src="./img/Posters series/loki.jpg" alt="poster 5"></a>
-                            <h4>Loki</h4>
-                            <p>2021</p>
+                            <div class="nombre-estreno">
+                                <h4>Loki</h4>
+                                <p>2021</p>
+                            </div>
                         </div>
                     </article>  
                 </div>
@@ -98,40 +104,50 @@
                     <article>
                         <div>
                             <a href="detail-serie.html"><img src="./img/Posters series/friends.jpg" alt="poster 1"></a>
-                            <h4>Friends</h4>
-                            <p>1994</p>
+                            <div class="nombre-estreno">
+                                <h4>Friends</h4>
+                                <p>1994</p>
+                            </div>
                         </div>
                     </article>  
                 
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="./img/Posters películas/soncomoniños.jpg" alt="poster 2"></a>
-                            <h4>Son como niños</h4>
-                            <p>2010</p>
+                            <div class="nombre-estreno">
+                                <h4>Son como niños</h4>
+                                <p>2010</p>
+                            </div>
                         </div>
                     </article>
                 
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="img/Posters películas/orgulloyprejuicio.jpg" alt="poster 3"></a>
-                            <h4>Orgullo y prejuicio</h4>
-                            <p>2005</p>
+                            <div class="nombre-estreno">
+                                <h4>Orgullo y prejuicio</h4>
+                                <p>2005</p>
+                            </div>
                         </div>
                     </article>
 
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="./img/Posters películas/annabelle.jpg" alt="poster 4"></a>
-                            <h4>Annabelle</h4>
-                            <p>2014</p>
+                            <div class="nombre-estreno">
+                                <h4>Annabelle</h4>
+                                <p>2014</p>
+                            </div>
                         </div>
                     </article>
                     
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="./img/Posters películas/regresoalfuturo.jpg" alt="poster 5"></a>
-                            <h4>Regreso al futuro</h4>
-                            <p>1985</p>
+                            <div class="nombre-estreno">
+                                <h4>Regreso al futuro</h4>
+                                <p>1985</p>
+                            </div>
                         </div>
                     </article>  
                 </div>
@@ -144,42 +160,53 @@
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="./img/Posters películas/elrobodelsiglo.jpg" alt="poster 1"></a>
-                            <h4>El robo del siglo</h4>
-                            <p>2020</p>
+                            <div class="nombre-estreno">
+                                <h4>El robo del siglo</h4>
+                                <p>2020</p>
+                            </div>
                         </div>
                     </article>  
                 
                     <article>
                         <div>
                             <a href="detail-serie.html"><img src="./img/Posters series/peakyblinders.jpg" alt="poster 2"></a>
-                            <h4>Peaky Blinders</h4>
-                            <p>2013</p>
+                            <div class="nombre-estreno">
+                                <h4>Peaky Blinders</h4>
+                                <p>2013</p>
+                            </div>
                         </div>
                     </article>
                 
                     <article>
                         <div>
                             <a href="detail-movie.html"><img src="./img/Posters películas/mazerunner.jpg" alt="poster 3"></a>
-                            <h4>Maze Runner</h4>
-                            <p>2014</p>
+                            <div class="nombre-estreno">
+                                <h4>Maze Runner</h4>
+                                <p>2014</p>
+                            </div>
                         </div>
                     </article>
 
                     <article>
                         <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/endgame.jpg" alt="poster 5"></a>
+                            <div class="nombre-estreno">
+                                <h4>Avengers: Endgame</h4>
+                                <p>2019</p>
+                            </div>
+                        </div>
+                    </article>  
+
+                    <article>
+                        <div>
                             <a href="detail-serie.html"><img src="./img/Posters series/breakingbad.jpg" alt="poster 4"></a>
-                            <h4>Breaking Bad</h4>
-                            <p>2008</p>
+                            <div class="nombre-estreno">
+                                <h4>Breaking Bad</h4>
+                                <p>2008</p>
+                            </div>
                         </div>
                     </article>
                     
-                    <article>
-                        <div>
-                            <a href="detail-movie.html"><img src="./img/Posters películas/endgame.jpg" alt="poster 5"></a>
-                            <h4>Avengers: Endgame</h4>
-                            <p>2019</p>
-                        </div>
-                    </article>  
                 </div>
             </section>
         </div>
@@ -193,5 +220,6 @@
         </div>
     </footer>
     </div>
+    
 </body>
 </html>

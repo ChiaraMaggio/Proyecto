@@ -1,15 +1,9 @@
-/* A tener en cuenta para diseño responsive:
-            - las medidas de la prop. height no se expresan en porcentaje.
-            - para modificar las medidas de prop. como width, se observa el tamaño
-            de la etiqueta que queremos modificar, el del contenedor que la lleva
-            dentro (representa el 100%), y se hace la regla de tres simple. */ 
-
-/*estilo general*/
+/* estilo general */
 * {
     box-sizing: border-box;
 }
 
-/*configuración y reset de etiquetas que podemos usar*/
+/* configuración y reset de etiquetas que podemos usar */
 ul, ol {
     margin: 0;
     padding: 0;
@@ -23,19 +17,19 @@ a {
     text-decoration: none;
 }
 
-p, h3, h4 {
+p, h2, h3, h4 {
     margin: 0;
     color: white;
 }
 
-/*estilo body*/
+/* estilo body */
 body {
     margin: 0;
     font-family: 'Bebas Neue', cursive;
-    background-color: black;
+    background-color: black;  
 }
 
-/*estilo header*/
+/* estilo header */
 header {
     background-color:black;
 }
@@ -45,9 +39,23 @@ header {
     margin: auto;
 }
 
+.logo {
+    max-width: 100%;
+    height: 151px;
+}
+
+.img {
+    width: 13,77%;
+    height: 145px;
+}
+
+.nav-barritas {
+    display: none;
+}
+
 header nav a {
     display: inline-block;
-    width: 13.33%; /*140px*/
+    width: 140px; /*pasar de pixeles a medida relativa */
     height: 30px;
     color: white;
     text-align: center;
@@ -55,6 +63,8 @@ header nav a {
 }
 
 header nav form button {
+    margin: 0;
+    padding: 0;
     border: none;
     background-color: black;
     color: white;
@@ -73,14 +83,30 @@ header nav form button {
     justify-content: space-between;
 }
 
-/*estilo main HOME*/
+.buscador {
+    max-width: 19.46%; /*204.91px*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#input {
+    max-width: 93.49%; /*163.66px*/
+}
+
+#button {
+    max-width: 6.51%; /*13.34px*/
+}
+
+/* estilo main HOME */
 .contenedor-main {
     width: 95%;
     margin: auto;
 }
 
 main section h3 {
-    padding: 20px 0px /*hay que chequear si el padding se expresa en porcentaje*/
+    padding: 20px 0px 
 }
 
 .contenedor-artículo {
@@ -90,13 +116,14 @@ main section h3 {
     flex-wrap: wrap;
 }
 
-/*estilo footer*/
+/* estilo footer */
 footer {
     background-color: black;
 }
 
 footer h3 {
     padding: 20px 0;
+    text-align: center;
 }
 
 .contenedor-footer {
@@ -107,20 +134,75 @@ footer h3 {
     justify-content: space-between;
 }
 
-/*diseño responsive TABLETS*/
-@media (max-width:768px) {
-    /*HOME*/
-}
-    
+
+/* diseño responsive MOBILE LAST */
+@media (max-width:420px) {
+    /* HOME */
+    .contenedor {
+        width: 90%;
+    }
+
+    .nav-barritas {
+        display:inline-block;
+        color: white;
+    }
+
+    .secciones-ocultas {
+        display: none;
+    }
+
+    #input {
+        max-width: none;
+        padding: 5px 0;
+    }
+
+    #button {
+        max-width: none;
+        padding: 5px;
+    }
+
+    .contenedor-main {
+        width: 90%
+    }
+
+    .nombre-estreno {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2px 0 15px 0;
+    }
+
+    .contenedor-artículo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-footer {
+        width: 90%;
+    }
+}    
+
+
 
 /* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
 
+<<<<<<< HEAD
 /* Float-left para que dentro del contenedor la imagen este flotando a a izquierda y sus demás elementos a la derecha. Margin-right, para crear un espacio entre la foto y el texto  */
  .posicionamiento{
   float: left;
   background-color: seagreen;
   margin-right: 15px;
   
+=======
+.portada {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 10px 10px;
+    margin: 30px;
+    background-color: rosybrown;
+    
+>>>>>>> ad085924bb872f5cf66d148dfdda649dc199b8ae
 }  
 
 .caja-pelicula {
@@ -173,14 +255,24 @@ footer h3 {
     flex-wrap: wrap;
     background-color: slateblue;
 
+<<<<<<< HEAD
 /*resposive tablet*/
 @media (max-width:768px) {
     
 }
+=======
+}
 
-.contenedor-generos {
+/* genero peliculas y series */
+
+>>>>>>> ad085924bb872f5cf66d148dfdda649dc199b8ae
+
+.contenedor-géneros {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: aqua;  
+    flex-wrap: wrap;
+}
+
+.artículo-género {
+    padding: 0 10px;
 }

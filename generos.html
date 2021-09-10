@@ -7,119 +7,213 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="">
-    <title>GENEROS</title>
+    <title>Géneros</title>
 </head>
 <body>
     <div>
-        <header>
-            <div class="contenedor">
-                <!--<nav class="login">
-                    <a href="#">Login</a>
-                    <a href="#">Registro</a>
-                </nav>-->
-                <img width="145" height="145" src="img/logoTCR.jpg" alt="Logo">
-                <nav class="secciones">
-                    <a href="home.html" class="activo">HOME</a>
-                    <a href="generos.html">GÉNEROS</a>
-                    <a href="detallespys.html">SERIES Y PELÍCULAS</a>
-                    <a href="favoritos.html">FAVORITOS</a>
-                    <form action="resultados.html" method="GET">    
-                        <div>
-                            <input type="buscador" name="buscador" value="" id="buscador" placeholder="Buscar">
-                            <button type="submit"><i class="fas fa-search"></i></button> 
-                        </div>  
-                </nav>
+    <header>
+        <div class="contenedor">
+            <!-- por si al final tenemos tiempo y añadimos estos formularios al header
+                <nav class="login">
+                <a href="#">Login</a>
+                <a href="#">Registro</a>
+            </nav>-->
+            <div class="logo">
+                <img class="img" src="img/logoTCR.jpg" alt="Logo">
             </div>
-        </header>
+            <a href="#" class="nav-barritas"><span class="fa fa-bars"></span></a>
+            <nav class="secciones">
+                <a href="home.html" class="secciones-ocultas" >HOME</a>
+                <a href="generos.html" class="secciones-ocultas">GÉNEROS</a>
+                <a href="favoritos.html" class="secciones-ocultas">FAVORITOS</a>
+                <form action="resultados.html" method="GET" class="buscador">    
+                    <div id="input">
+                        <input type="buscador" name="buscador" value="" id="buscador" placeholder="Buscar">
+                    </div>
+                    <div id="button">
+                        <button type="submit"><i class="fas fa-search"></i></button> 
+                    </div>
+                </form>     
+            </nav>
+        </div>
+    </header>
     
      <main>
-        <section>
+        <div class="contenedor-main">
+            <br>
             <h2>Películas</h2>
-        </section>
-        <section>
-            <h3>Ciencia ficción</h3>    
-            <div class="contenedor-generos"></div>
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/regresoalfuturo.jpg" alt="regreso al futuro">   
-                        <h4>Volver al futuro </h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>
+            <section>
+                <h3>Ciencia ficción</h3>    
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/regresoalfuturo.jpg" alt="regreso al futuro"></a>   
+                            <h4>Volver al futuro </h4>
+                            <p>1985</p>
+                        </div>
+                    </article>
 
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/" alt="mazerunner">
-                        <h4>Maze Runner</h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/mazerunner.jpg" alt="mazerunner"></a>
+                            <h4>Maze Runner</h4>
+                            <p>2014</p>
+                        </div>
+                    </article>
 
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/endgame.jpg" alt="endgame">
-                        <h4>Avengers: End Game</h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>
-        </section>
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/endgame.jpg" alt="endgame"></a>
+                            <h4>Avengers: End Game</h4>
+                            <p>2019</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
        
-        <section>
-            <h3>Comedia</h3>
-            <div class="contenedor-generos"></div>
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/soncomoniños.jpg" alt="soncomoniños">
-                        <h4>Son como niños</h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>
+            <section>
+                <h3>Comedia</h3>
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/soncomoniños.jpg" alt="soncomoniños"></a>
+                            <h4>Son como niños</h4>
+                            <p>2010</p>
+                        </div>
+                    </article>
 
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/elrobodelsiglo.jpg" alt="elrobodelsiglo">
-                        <h4>El robo del siglo</h4>
-                        <p>Fecha de estreno</p>
-                    </div>                
-                </article>
-        </section>
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/elrobodelsiglo.jpg" alt="elrobodelsiglo"></a>
+                            <h4>El robo del siglo</h4>
+                            <p>2020</p>
+                        </div>                
+                    </article>
+                </div>
+            </section>
 
-        <section>
-            <h3>Terror</h3>
-            <div class="contenedor-generos"></div>
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/annabelle.jpg" alt="annabelle">
-                        <h4>Annabelle</h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>
+            <section>
+                <h3>Terror</h3>
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/annabelle.jpg" alt="annabelle"></a>
+                            <h4>Annabelle</h4>
+                            <p>2014</p>
+                        </div>
+                    </article>
 
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/elconjuro3.jpg" alt="elconjuro3">
-                        <h4>El Conjuro 3</h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>        
-        </section>
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/elconjuro3.jpg" alt="elconjuro3"></a>
+                            <h4>El Conjuro 3</h4>
+                            <p>2021</p>
+                        </div>
+                    </article>        
+                </div>
+            </section>
         
-        <section>
-            <h3>Drama</h3>
-            <div class="contenedor-genero"></div>
-                <article>
-                    <div>
-                        <a href="detail-movie.html"></a><img src="./img/Posters películas/orgulloyprejuicio.jpg" alt="orgulloyprejuicio">
-                        <h4>Orgullo y Prejuicio</h4>
-                        <p>Fecha de estreno</p>
-                    </div>
-                </article>
-        </section>
+            <section>
+                <h3>Drama</h3>
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-movie.html"><img src="./img/Posters películas/orgulloyprejuicio.jpg" alt="orgulloyprejuicio"></a>
+                            <h4>Orgullo y Prejuicio</h4>
+                            <p>2005</p>
+                        </div>
+                    </article>
+                </div>   
+            </section>
     
-    
-    </main>   
+            <br>
+            <h2>Series</h2>
+            <section>
+                <h3>CIENCIA FICCIÓN</h3>
+                <div class="contenedor-géneros">
+                    <article class=artículo-género>
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/loki.jpg" alt="loki"></a>
+                            <h4>Loki</h4>
+                            <p>2021</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-    </div>
+            <section>
+                <h3>COMEDIA</h3>
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/friends.jpg" alt="friends"></a>
+                            <h4>Friends</h4>
+                            <p>1994</p>
+                        </div>
+                    </article>
+
+                    <article class="artículo-género"> 
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/sexeducation.jpg" alt="sexeducation"></a>
+                            <h4>Sex Education</h4>
+                            <p>2019</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h3>TERROR</h3>
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/hillhouse.jpg" alt="hillhouse"></a>
+                            <h4>La maldición de Hill House</h4>
+                            <p>2018</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h3>DRAMA</h3>
+                <div class="contenedor-géneros">
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/peakyblinders.jpg" alt="peakyblinders"></a>
+                            <h4>PeaKy Blinders</h4>
+                            <p>2013</p>
+                        </div>
+                    </article>
+
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/obx.jpg" alt="obx"></a>
+                            <h4>Outer Banks</h4>
+                            <p>2020</p>
+                        </div>
+                    </article>
+
+                    <article class="artículo-género">
+                        <div>
+                            <a href="detail-serie.html"><img src="./img/Posters series/breakingbad.jpg" alt="breakingbad"></a>
+                            <h4>Breaking Bad</h4>
+                            <p>2008</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>  
+
+    <footer>
+        <div class="contenedor-footer">
+            <h3>Chiara Maggio</h3>
+            <h3>Rodrigo Vaca Guzmán Nacif</h3>
+            <h3>Tiziana Maguna</h3>
+        </div>
+    </footer>
+    </div> 
+
 </body>
 </html>
