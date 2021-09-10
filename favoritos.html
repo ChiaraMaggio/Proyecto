@@ -7,9 +7,50 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>Favoritos</title>
+    <link rel="stylesheet" href=""><!-- necesito el link para el corazón de font awesome -->
+    <title>Home</title>
+    <title>favoritos</title>
 </head>
 <body>
-    
+    <header>
+		<div class="contenedor">
+            <!-- por si al final tenemos tiempo y añadimos estos formularios al header
+                <nav class="login">
+                <a href="#">Login</a>
+                <a href="#">Registro</a>
+            </nav>-->
+			<img width="145" height="145" src="img/logoTCR.jpg" alt="Logo">
+			<nav class="secciones">
+				<a href="home.html" class="activo">HOME</a>
+				<a href="generos.html">GÉNEROS</a>
+				<a href="favoritos.html">FAVORITOS</a>
+                <form action="resultados.html" method="GET">    
+                    <div>
+                        <input type="buscador" name="buscador" value="" id="buscador" placeholder="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button> 
+                    </div>  
+			</nav>
+		</div>
+	</header>
+    <main>
+     <div class="contenedor-artículo">
+        <article>
+            <div>
+                <h2>MI LISTA</h2>
+                <a href="detail-movie.html"><img src="./img/Posters películas/elconjuro3.jpg" alt="poster 1"></a>
+                <h3>El Conjuro 3</h3>
+                <p>2021</p>
+            </div>
+        </article>
+     </div>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <h3>Chiara Maggio</h3>
+            <h3>Rodrigo Vaca Guzmán Nacif</h3>
+            <h3>Tiziana Maguna</h3>
+        </div>
+    </footer>
 </body>
 </html>
+

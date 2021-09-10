@@ -115,41 +115,46 @@ footer h3 {
 
 /* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
 
-.portada{
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-    padding: 10px 10px;
-    margin: 30px;
-    background-color: rosybrown;
-    
+/* Float-left para que dentro del contenedor la imagen este flotando a a izquierda y sus demás elementos a la derecha. Margin-right, para crear un espacio entre la foto y el texto  */
+ .posicionamiento{
+  float: left;
+  background-color: seagreen;
+  margin-right: 15px;
+  
 }  
+
+.caja-pelicula {
+    background-color: green;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 
 .titulo-serie {
     color: white;
-    margin: 20px;
 }
 
-<<<<<<< HEAD
  .descripción {
+    display: flex;
     font-size: 18px;
     color: white;
-    padding: 20px;
+    background-color: salmon;
+    padding-right: 70px
 
-   /*  display: inline-block;
-    justify-content: space-around;
-    padding: 15px 10px;
-    margin: 30px;
-    background-color: rosybrown;  */
-  } 
-
+} 
+            
 .características {
     display: block;
     justify-content: center;
     color: white;
-    /* padding: 7px 0;
-    margin: 20px; */
-    background-color: seagreen;
+    padding: 7px 0;
+    margin: 20px; 
+    background-color: red
+}
+
+.reproductores {
+    display: flex;
+    justify-content: center;
 }
 
 .boton {
@@ -158,9 +163,7 @@ footer h3 {
     width: 140px; 
     height: 30px;
     color: white;
-    align-items: center;
     background-color:grey
-    
 }
 
 .trailer {
@@ -170,15 +173,10 @@ footer h3 {
     flex-wrap: wrap;
     background-color: slateblue;
 
-}
 /*resposive tablet*/
 @media (max-width:768px) {
     
 }
-=======
-/* genero peliculas y series */
-
->>>>>>> bf84f2ff26b7f9a31c735c8b91ad1672888d811c
 
 .contenedor-generos {
     display: flex;
