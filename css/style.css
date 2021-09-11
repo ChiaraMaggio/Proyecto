@@ -15,6 +15,7 @@ li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 p, h2, h3, h4 {
@@ -65,7 +66,6 @@ header nav a {
     display: inline-block;
     width: 140px; /*pasar de pixeles a medida relativa */
     height: 30px;
-    color: white;
     text-align: center;
     background-color:black;
 }
@@ -114,6 +114,82 @@ main section h3 {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+/* estilo main GÉNEROS*/
+
+.título-géneros {
+    padding: 25px 0 0 0;
+}
+
+.contenedor-géneros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.artículo-género {
+    padding: 0 10px;
+}
+
+/* estilo main DETAIL-MOVIE */
+
+.título {
+    padding: 15px 0 0 60px;
+}
+
+.contenedor-película {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 60px;
+}
+
+.portada {
+    max-width: 28.24%;
+    height: 336px;
+}
+
+.descripción {
+    padding: 0 0 0 10px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 22px;
+    font-family:'Roboto', sans-serif;
+}
+
+.contenedor-desc-lis {
+    flex-direction: column;
+
+}
+
+ul li span {
+    padding: 0 2px;
+}
+
+ul li h4 {
+    color: #5AE15A;
+}
+
+.lista {
+    display: flex;
+    color: white;
+    padding: 0 0 0 10px;
+}
+
+.form-fav {
+    display: flex;
+    flex-direction: row;
+}
+
+/*esto no pude revisarlo*/
+
+.trailer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: slateblue;
 }
 
 /* estilo footer */
@@ -180,71 +256,5 @@ footer h3 {
     .contenedor-footer {
         width: 90%;
     }
-}    
-
-
-/* Detail movie (no terminé. Me cuestA perdón x tan poco) Todo lo que esté entre comentarios es porque todavía no lo resuelvo o no sé cómo ponerlo. */
- 
-/* estilo main DETAIL-MOVIE */
-
-.caja-película {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 0 0 0;
 }
 
-.portada {
-    max-width: 28.24%;
-    height: 336px;
-}
-
-.descripción {
-    padding: 0 0 0 10px;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.contenedor-desc-lis {
-    flex-direction: column;
-
-}
-
-ul {
-    padding: 15px 0 0 0;
-}
-
-ul li span {
-    padding: 0 2px;
-}
-
-.lista {
-    display: flex;
-    color: white;
-    padding: 0 0 0 10px;
-}
-
-.form-fav {
-    display: flex;
-    flex-direction: row;
-}
-
-/*esto no pude revisarlo*/
-
-.trailer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: slateblue;
-}
-
-.contenedor-géneros {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.artículo-género {
-    padding: 0 10px;
-}
