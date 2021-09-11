@@ -147,7 +147,7 @@ main section h3 {
     padding: 15px 0 0 60px;
 }
 
-.contenedor-película {
+.contenedor-detalles {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -293,7 +293,7 @@ footer h3 {
         text-align: center;
     }
 
-    .contenedor-película {
+    .contenedor-detalles {
         flex-direction: column;
         align-items: center;
         padding: 15px;
