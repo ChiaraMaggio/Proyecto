@@ -256,16 +256,16 @@ footer h3 {
     .contenedor-footer {
         width: 90%;
     }
-}
+
 
     /* GENEROS */
 
     .contenedor-géneros {
         flex-direction: column;
         align-items: center;
-
     }
 
     .artículo-género {
         padding: 15px 0 15px 0;
     }
+}
