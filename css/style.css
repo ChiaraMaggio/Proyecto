@@ -1,9 +1,11 @@
 /* estilo general */
+
 * {
     box-sizing: border-box;
 }
 
 /* configuración y reset de etiquetas que podemos usar */
+
 ul, ol {
     margin: 0;
     padding: 0;
@@ -32,6 +34,7 @@ form button {
 }
 
 /* estilo body */
+
 body {
     margin: 0;
     font-family: 'Bebas Neue', cursive;
@@ -39,6 +42,7 @@ body {
 }
 
 /* estilo header */
+
 header {
     background-color:black;
 }
@@ -100,6 +104,7 @@ header nav a {
 }
 
 /* estilo main HOME */
+
 .contenedor-main {
     width: 95%;
     margin: auto;
@@ -107,6 +112,10 @@ header nav a {
 
 main section h3 {
     padding: 20px 0px 
+}
+
+.texto-verde {
+    color: #5AE15A;
 }
 
 .contenedor-artículo {
@@ -193,6 +202,7 @@ ul li h4 {
 }
 
 /* estilo footer */
+
 footer {
     background-color: black;
 }
@@ -213,7 +223,7 @@ footer h3 {
 
 /* diseño responsive MOBILE LAST */
 @media (max-width:420px) {
-    /* HOME */
+    /* HEADER */
     .contenedor {
         width: 90%;
     }
@@ -237,6 +247,12 @@ footer h3 {
         padding: 5px;
     }
 
+    /* HOME */
+
+    main section h3 {
+        padding: 20px 20px;
+    }
+
     .contenedor-main {
         width: 90%
     }
@@ -253,19 +269,20 @@ footer h3 {
         align-items: center;
     }
 
-    .contenedor-footer {
-        width: 90%;
+    /* GÉNEROS */
+
+    .título-géneros {
+        padding: 25px 0 0 20px;
     }
-
-
-    /* GENEROS */
 
     .contenedor-géneros {
         flex-direction: column;
         align-items: center;
     }
 
-    .artículo-género {
-        padding: 15px 0 15px 0;
+    /* FOOTER*/
+    
+    .contenedor-footer {
+        width: 90%;
     }
 }
