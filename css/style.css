@@ -143,10 +143,6 @@ main section h3 {
     flex-wrap: wrap;
 }
 
-.artículo-género {
-    padding: 0 10px;
-}
-
 /* estilo main DETAIL-MOVIE */
 
 #título-detalle {
@@ -353,7 +349,14 @@ footer h3 {
         padding: 0;
     }
 
-    /* FOOTER*/
+    /* RESULTADOS */
+
+    #resultados {
+        text-align: left;
+        padding: 20px 20px 0 20px;
+    }
+
+    /* FOOTER */
     
     .contenedor-footer {
         width: 90%;
