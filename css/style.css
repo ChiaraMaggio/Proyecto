@@ -134,7 +134,7 @@ main section h3 {
 /* estilo main GÉNEROS Y DETALLE DE GÉNERO */
 
 .título-h2 {
-    padding: 25px 0 0 20px;
+    padding: 25px 0 0 0;
 }
 
 .contenedor-géneros {
@@ -294,6 +294,10 @@ footer h3 {
 
     /* GÉNEROS */
 
+    .título-h2 {
+        padding: 25px 0 0 20px;
+    }
+    
     .título-géneros {
         padding: 25px 0 0 20px;
     }
