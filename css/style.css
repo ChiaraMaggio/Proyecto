@@ -47,7 +47,7 @@ body {
     background-color: black;  
 }
 
-/* estilo header */
+/* estilo HEADER */
 
 header {
     background-color:black;
@@ -94,19 +94,19 @@ header nav a {
 }
 
 .buscador {
-    max-width: 19.46%; /204.91px/
+    max-width: 19.46%; /*204.91px*/
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 
 #input {
-    max-width: 93.49%; /163.66px/
+    max-width: 93.49%; /*163.66px*/
 }
 
 #button {
-    max-width: 6.51%; /13.34px/
+    max-width: 6.51%; /*13.34px*/
 }
 
 /* estilo main HOME */
@@ -133,7 +133,7 @@ main section h3 {
 
 /* estilo main GÉNEROS Y DETALLE DE GÉNERO */
 
-.título-géneros {
+.título-h2 {
     padding: 25px 0 0 0;
 }
 
@@ -213,7 +213,18 @@ ul li h4 {
     flex-wrap: wrap;
 }
 
-/* estilo footer */
+/* estilo main RESULTADOS */
+
+#resultados {
+    text-align: center;
+}
+
+#clasificación {
+    text-align: center;
+    background-color: #5AE15A;
+}
+
+/* estilo FOOTER */
 
 footer {
     background-color: black;
@@ -341,7 +352,6 @@ footer h3 {
     .caja-tráiler {
         padding: 0;
     }
-
 
     /* FOOTER*/
     
