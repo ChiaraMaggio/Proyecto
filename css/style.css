@@ -1,3 +1,9 @@
+/* A tener en cuenta para diseño responsive:
+            - las medidas de la prop. height no se expresan en porcentaje.
+            - para modificar las medidas de prop. como width, se observa el tamaño
+            de la etiqueta que queremos modificar, el del contenedor que la lleva
+            dentro (representa el 100%), y se hace la regla de tres simple. */ 
+
 /* estilo general */
 
 * {
@@ -88,7 +94,7 @@ header nav a {
 }
 
 .buscador {
-    max-width: 19.46%; /*204.91px*/
+    max-width: 19.46%; /204.91px/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,11 +102,11 @@ header nav a {
 }
 
 #input {
-    max-width: 93.49%; /*163.66px*/
+    max-width: 93.49%; /163.66px/
 }
 
 #button {
-    max-width: 6.51%; /*13.34px*/
+    max-width: 6.51%; /13.34px/
 }
 
 /* estilo main HOME */
@@ -125,7 +131,7 @@ main section h3 {
     flex-wrap: wrap;
 }
 
-/* estilo main GÉNEROS*/
+/* estilo main GÉNEROS Y DETALLE DE GÉNERO */
 
 .título-géneros {
     padding: 25px 0 0 0;
@@ -335,6 +341,7 @@ footer h3 {
     .caja-tráiler {
         padding: 0;
     }
+
 
     /* FOOTER*/
     
