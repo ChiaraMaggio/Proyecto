@@ -134,13 +134,17 @@ main section h3 {
 /* estilo main GÉNEROS Y DETALLE DE GÉNERO */
 
 .título-h2 {
-    padding: 25px 0 0 0;
+    padding: 25px 0 0 20px;
 }
 
 .contenedor-géneros {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.artículo-género {
+    padding: 0 15px 0 0;
 }
 
 /* estilo main DETAIL-MOVIE */
@@ -297,6 +301,10 @@ footer h3 {
     .contenedor-géneros {
         flex-direction: column;
         align-items: center;
+    }
+
+    .artículo-género {
+        padding: 0;
     }
 
     /* DETAIL MOVIE */
