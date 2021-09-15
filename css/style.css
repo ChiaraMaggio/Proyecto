@@ -311,7 +311,7 @@ footer h3 {
         padding: 0;
     }
 
-    /* DETAIL MOVIE */
+    /* DETAIL MOVIE/SERIE */
 
     #título-detalle {
         padding: 15px 0 0 0;
@@ -361,6 +361,11 @@ footer h3 {
         padding: 0;
     }
 
+    .reproductores {
+        padding: 15px 0 0 0;
+        text-align: center;
+        background-color: #5AE15A;
+    }
     /* RESULTADOS */
 
     #resultados {
