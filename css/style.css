@@ -148,7 +148,7 @@ main section h3 {
     padding: 0 15px 0 0;
 }
 
-/* estilo main DETAIL-MOVIE */
+/* estilo main DETAIL-MOVIE/SERIE */
 
 #título-detalle {
     padding: 15px 0 0 60px;
@@ -214,6 +214,12 @@ ul li h4 {
     flex-wrap: wrap;
 }
 
+/* estilo main FAVORITOS*/
+
+#sección-fav {
+    padding: 20px 0 0 0;
+}
+
 /* estilo main RESULTADOS */
 
 #resultados {
@@ -259,7 +265,6 @@ footer h3 {
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 /* diseño responsive MOBILE LAST */
 
