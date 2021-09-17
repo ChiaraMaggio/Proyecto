@@ -220,6 +220,10 @@ ul li h4 {
     padding: 20px 0 0 0;
 }
 
+main section ul li form label {
+    padding: 0 5px 0 0;
+}
+
 /* estilo main RESULTADOS */
 
 #resultados {
