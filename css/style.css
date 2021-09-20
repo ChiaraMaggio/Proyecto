@@ -44,8 +44,7 @@ form button {
 body {
     margin: 0;
     font-family: 'Bebas Neue', cursive;
-    /* background-color: black; */  
-    background: linear-gradient(#f69d3c, #3f87a6);
+    background-color: black;
 }
 
 /* estilo HEADER */
