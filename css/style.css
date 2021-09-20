@@ -59,12 +59,11 @@ header {
 }
 
 .logo {
-    max-width: 100%;
-    height: 151px;
+    min-width: 13,77%;
 }
 
 .img {
-    width: 13,77%;
+    max-width: 100%;
     height: 145px;
 }
 
