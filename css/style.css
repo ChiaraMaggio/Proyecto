@@ -123,13 +123,30 @@ header nav a {
     color: #5AE15A;
 }
 
-.contenedor-artículo {
+.contenedor-artículo1 {
     padding: 20px 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.contenedor-artículo2 {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-artículo3 {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 
 /* estilo main GÉNEROS Y DETALLE DE GÉNERO */
 
@@ -375,6 +392,7 @@ footer h3 {
         flex-direction: column;
     }
     
+    /* 
     #tráiler {
         padding: 15px 0 0 0;
         text-align: center;
@@ -388,7 +406,8 @@ footer h3 {
         padding: 15px 0 0 0;
         text-align: center;
         background-color: #5AE15A;
-    }
+    } */
+
     /* RESULTADOS */
 
     #resultados {
