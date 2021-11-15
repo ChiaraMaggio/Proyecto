@@ -274,7 +274,7 @@ footer {
 }
 
 footer h3 {
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -286,9 +286,26 @@ footer h3 {
     justify-content: space-between;
 }
 
+.contenedor-TMDB {
+    margin: 0;
+    padding: 20px 0 0 0;
+    max-width: 4.64%;
+}
+
+.TMDB {
+    padding: 0;
+}
+
+.logoTMDB {
+    max-width: 100%;
+    padding: 0;
+}
+
+
+
 /* diseño responsive MOBILE LAST */
 
-@media (max-width:420px) {
+@media (max-width:410px) {
     
     /* HEADER */
     .contenedor {
@@ -391,7 +408,7 @@ footer h3 {
         padding: 0 0 2px 0;
         flex-direction: column;
     }
-    
+
     /* 
     #tráiler {
         padding: 15px 0 0 0;
@@ -417,7 +434,17 @@ footer h3 {
 
     /* FOOTER */
     
+    footer h3 {
+        font-size: 15px;
+        padding: 15px 0;
+    }
+
     .contenedor-footer {
         width: 90%;
+    }  
+    
+    .contenedor-TMDB {
+        padding: 0;
+        max-width: 10%;
     }
 }
