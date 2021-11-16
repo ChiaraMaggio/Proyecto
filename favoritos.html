@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href=""><!-- necesito el link para el corazón de font awesome -->
-    <title>MI LISTA</title>
+    <script src="js/validacion.js"></script>
+    <title>Favoritos</title>
 </head>
 <body>
     <div>
@@ -27,14 +27,17 @@
                 <a href="home.html" class="secciones-ocultas" >HOME</a>
 				<a href="generos.html" class="secciones-ocultas">GÉNEROS</a>
 				<a href="favoritos.html" class="secciones-ocultas">FAVORITOS</a>
-                <form action="resultados.html" method="GET" class="buscador">    
+                <form action="resultados.html" method="GET" class="buscador">
                     <div id="input">
-                        <input type="search" name="buscador" value="" id="buscador" placeholder="Buscar">
+                        <input type="search" name="buscador" value="" autocomplete="off" id="buscador" placeholder="Buscar">
                     </div>
                     <div id="button">
                         <button type="submit"><i class="fas fa-search"></i></button> 
                     </div>
-                </form>     
+                    <div>
+                        <p class="alerta"></p>
+                    </div>
+                </form>    
 			</nav>
 		</div>
 	</header>
