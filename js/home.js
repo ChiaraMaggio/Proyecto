@@ -3,7 +3,7 @@
 const apiKey = "a114d2c8656f1a238841af09c2a4f418";
 
 /* Comillas invertidas = `` */
-/* Parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w185 */
+/* Parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w200 */
 
 window.addEventListener("load", function(){
     
@@ -22,7 +22,7 @@ window.addEventListener("load", function(){
             document.querySelector(".contenedor-artículo1").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 1"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -51,7 +51,7 @@ window.addEventListener("load", function(){
         
                 <article>
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 2"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -81,7 +81,7 @@ window.addEventListener("load", function(){
             document.querySelector(".contenedor-artículo2").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 1"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -110,7 +110,7 @@ window.addEventListener("load", function(){
         
                 <article>
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 2"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -140,7 +140,7 @@ window.addEventListener("load", function(){
             document.querySelector(".contenedor-artículo3").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 1"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -169,7 +169,7 @@ window.addEventListener("load", function(){
         
                 <article>
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 2"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -183,4 +183,5 @@ window.addEventListener("load", function(){
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
+
 })
