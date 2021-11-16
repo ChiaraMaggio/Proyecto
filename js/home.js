@@ -1,4 +1,7 @@
 /* Clave de la API = a114d2c8656f1a238841af09c2a4f418 */
+
+const apiKey = "a114d2c8656f1a238841af09c2a4f418";
+
 /* Comillas invertidas = `` */
 /* Parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w185 */
 
@@ -6,7 +9,7 @@ window.addEventListener("load", function(){
     
     /* fetch sección 1 */
 
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
@@ -34,7 +37,7 @@ window.addEventListener("load", function(){
         console.log(`El error fue: ${error}`);
     })
 
-    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
@@ -65,7 +68,7 @@ window.addEventListener("load", function(){
    
     /* fetch sección 2 */
 
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
@@ -93,7 +96,7 @@ window.addEventListener("load", function(){
         console.log(`El error fue: ${error}`);
     })
 
-    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
@@ -124,7 +127,7 @@ window.addEventListener("load", function(){
 
     /* fetch sección 3 */
 
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
@@ -152,7 +155,7 @@ window.addEventListener("load", function(){
         console.log(`El error fue: ${error}`);
     })
 
-    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
