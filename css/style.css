@@ -271,9 +271,9 @@ main section ul li form label {
     Lo separamos porque la leyenda no es un ejemplo simplemente y puede que haya que aplicarle determinadas propiedades
     más adelante*/
 
-#leyenda2 {
+/* #leyenda2 {
     display: none;
-}
+} */
 
 /* estilo FOOTER */
 
