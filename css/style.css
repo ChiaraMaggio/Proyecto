@@ -153,6 +153,7 @@ main section h3 {
 
 .artículo-género {
     padding: 0 15px 0 0;
+    width: 20%;
 }
 
 /* estilo main DETAIL-MOVIE/SERIE */
@@ -238,6 +239,7 @@ main section ul li form label {
 }
 
 #clasificación {
+    width: 100%;
     text-align: center;
     background-color: #5AE15A;
 }
@@ -245,6 +247,10 @@ main section ul li form label {
     /* la siguiente clase es para ocultar otros ejemplos de cómo podrían visualizarse los resultados de busqueda del usuario 
     en el caso de que buscara una película o serie en específico que sí se encuentre en el sitio 
     (no un género como el caso que dejamos visible en el html)*/
+
+#portadas {
+    width: 100%;
+}
 
 .ejemplos-resultados {
     display: none;
@@ -364,6 +370,7 @@ footer h3 {
     }
 
     .artículo-género {
+        max-width: 20%;
         padding: 0;
     }
 
