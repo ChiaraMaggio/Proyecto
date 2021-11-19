@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Resultados</title>
+    <script src="js/resultados.js"></script>
+    <script src="js/validacion.js"></script>
 </head>
 <body>
     <div>
@@ -26,12 +28,15 @@
                 <a href="home.html" class="secciones-ocultas" >HOME</a>
 				<a href="generos.html" class="secciones-ocultas">GÉNEROS</a>
 				<a href="favoritos.html" class="secciones-ocultas">FAVORITOS</a>
-                <form action="resultados.html" method="GET" class="buscador">    
+                <form action="resultados.html" method="GET" class="buscador">
                     <div id="input">
-                        <input type="search" name="buscador" value="" id="buscador" placeholder="Buscar">
+                        <input type="search" name="buscador" value="" autocomplete="off" id="buscador" placeholder="Buscar">
                     </div>
                     <div id="button">
                         <button type="submit"><i class="fas fa-search"></i></button> 
+                    </div>
+                    <div>
+                        <p class="alerta"></p>
                     </div>
                 </form>     
 			</nav>
@@ -42,7 +47,7 @@
         <div class="contenedor-main">
             <h2 class="título-h2" id="resultados">Resultados de búsqueda</h2>
 
-            <section class="ejemplos-resultados">
+            <!-- <section class="ejemplos-resultados">
                 <h3>Buscaste <span class="texto-verde">"Peaky Blinders"</span> en God Films</h3>
                 <div class="contenedor-géneros">
                     <article>
@@ -72,12 +77,14 @@
                         </div>
                     </article> 
                 </div>
-            </section>
+            </section> -->
 
             <section>
-                <h3>Buscaste <span class="texto-verde">"Comedia"</span> en God Films</h3>
+                <div class="leyenda1">
+                <!-- <h3>Buscaste <span class="texto-verde">"Comedia"</span> en God Films</h3> -->
+                </div>
                 <div class="contenedor-géneros">
-                    <article class="artículo-género">
+                    <!-- <article class="artículo-género">
                         <div>
                             <p id="clasificación">Película</p>
                             <a href="detail-movie.html"><img src="./img/Posters películas/soncomoniños.jpg" alt="poster 4"></a>
@@ -86,9 +93,9 @@
                                 <p>2010</p>
                             </div>
                         </div>
-                    </article>
+                    </article> -->
 
-                    <article class="artículo-género">
+                    <!-- <article class="artículo-género">
                         <div>
                             <p id="clasificación">Película</p>
                             <a href="detail-movie.html"><img src="./img/Posters películas/elrobodelsiglo.jpg" alt="poster 5"></a>
@@ -119,13 +126,13 @@
                                 <p>2019</p>
                             </div>
                         </div>
-                    </article>
+                    </article> -->
                 </div>
             </section>
 
-            <section id="leyenda-resultados">
-                <h3>No se hallaron resultados para <span class="texto-verde">"Prision Break"</span> en God Films</h3>
-            </section>
+            <section id="leyenda2">
+                <!-- <h3>No se hallaron resultados para <span class="texto-verde">"Prision Break"</span> en God Films</h3> -->
+            </section> -->
         </div>
 
     </main>
@@ -135,6 +142,9 @@
             <h3><a href="https://www.instagram.com/chiiaramaggio/">Chiara Maggio</a></h3>
             <h3><a href="https://www.instagram.com/ayudabolivia/">Rodrigo Vaca Guzmán Nacif</a></h3>
             <h3><a href="https://www.instagram.com/cxrlyculture/">Tiziana Maguna</a></h3>
+            <div class="contenedor-TMDB">
+                <a href="https://www.themoviedb.org/?language=es" target="blank" class="TMDB"><img src="./img/descarga.png" alt="Logo de The Movie Data Base" class="logoTMDB"></a>
+            </div>
         </div>
     </footer>
     </div>

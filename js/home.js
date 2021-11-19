@@ -1,25 +1,29 @@
 /* Clave de la API = a114d2c8656f1a238841af09c2a4f418 */
+
+const apiKey = "a114d2c8656f1a238841af09c2a4f418";
+
 /* Comillas invertidas = `` */
-/* Parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w185 */
+/* Parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w200 */
 
 window.addEventListener("load", function(){
     
-    /* fetch sección 1 */
+    /* fetch sección populares */
 
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    /* películas populares */
+
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.results);  
 
-        for (let i = 1; i < 3; i++) {
-            document.querySelector(".contenedor-artículo1").innerHTML += `
+        for (let i = 1; i < 6; i++) {
+            document.querySelector("#contenedor-artículo1").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -29,26 +33,25 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
 
-    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    /* series populares */
+
+    fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.results);
 
-        for (let i = 0; i < 3; i++) {
-            document.querySelector(".contenedor-artículo1").innerHTML += `
-        
+        for (let i = 0; i < 5; i++) {
+            document.querySelector("#contenedor-artículo2").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -58,27 +61,27 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
    
-    /* fetch sección 2 */
+    /* fetch sección tendencias */
 
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    /* películas más vistas */
+
+    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.results);  
 
-        for (let i = 3; i < 5; i++) {
-            document.querySelector(".contenedor-artículo2").innerHTML += `
+        for (let i = 6; i < 11; i++) {
+            document.querySelector("#contenedor-artículo3").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -88,26 +91,25 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
 
-    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    /* series más vistas */
+
+    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.results);
 
-        for (let i = 3; i < 6; i++) {
-            document.querySelector(".contenedor-artículo2").innerHTML += `
-        
+        for (let i = 0; i < 5; i++) {
+            document.querySelector("#contenedor-artículo4").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -117,27 +119,27 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
 
-    /* fetch sección 3 */
+    /* fetch sección más valorados */
 
-    fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    /* películas más valoradas */
+
+    fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.results);  
 
-        for (let i = 5; i < 7; i++) {
-            document.querySelector(".contenedor-artículo3").innerHTML += `
+        for (let i = 4; i < 9; i++) {
+            document.querySelector("#contenedor-artículo5").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 1"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -147,26 +149,25 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
 
-    fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=a114d2c8656f1a238841af09c2a4f418`)
+    /* series más valoradas */
+
+    fetch(`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.results);
 
-        for (let i = 6; i < 9; i++) {
-            document.querySelector(".contenedor-artículo3").innerHTML += `
-        
+        for (let i = 3; i < 8; i++) {
+            document.querySelector("#contenedor-artículo6").innerHTML += `
                 <article>
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w185${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 2"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -176,7 +177,6 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
