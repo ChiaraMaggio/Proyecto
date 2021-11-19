@@ -68,7 +68,7 @@ window.addEventListener("load", function(){
                     <article class="artículo-género">
                         <div>
                             <p id="clasificación">Serie</p>
-                            <a href="detail-serie.html?id=${datos.results[i].id}"><img src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].original_name}"></a>
+                            <a href="detail-serie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].original_name}"></a>
                             <div class="nombre-estreno">
                                 <h4>${datos.results[i].original_name}</h4>
                                 <p>${datos.results[i].first_air_date}</p>
