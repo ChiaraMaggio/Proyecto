@@ -16,7 +16,7 @@ window.addEventListener("load", function(){
     .then(function(datos){
         console.log(datos.results);  
 
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < datos.results.length; i++) {
             document.querySelector(".contenedor-géneros").innerHTML += `
                 <article class="artículo-género">
                     <div>
