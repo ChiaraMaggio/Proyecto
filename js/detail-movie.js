@@ -30,7 +30,7 @@ window.addEventListener(`load`, function () {
                     <p class="descripción">${datos.overwiew}</p>
                     <ul>
                         <li class="lista">
-                            <h4> Reparto: </h4>
+                            <h4> Fecha de estreno: ${datos.release_date} </h4>
                             <span> </span>
                         </li>
                         <li class="lista">
