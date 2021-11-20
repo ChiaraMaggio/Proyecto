@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
                                     <span>${datos.first_air_date} </span>
                                 </li>
                                 <li class="lista"> 
-                                    <h4>Duración:</h4>
+                                    <h4>Duración de cada episodio:</h4>
                                     <span>${datos.episode_run_time} minutos</span>
                                 </li>
                                 <li class="lista">
