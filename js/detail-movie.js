@@ -20,7 +20,9 @@ window.addEventListener(`load`, function () {
             console.log(datos);
 
             document.querySelector(`.titulo-detalle`).innerHTML += `
+            <div class="contenedor-main">
             <h2> ${datos.title} </h2>
+            </div>
         `
             document.querySelector(`.contenedor-detalles`).innerHTML += `
                 <div class="portada">
