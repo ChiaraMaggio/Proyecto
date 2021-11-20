@@ -169,9 +169,10 @@ main section h3 {
     padding: 15px 60px;
 }
 
-.portada {
-    max-width: 28.24%;
-    height: 336px;
+#portada {
+    width: 25%;
+    /* max-width: 28.24%;
+    height: 336px; */
 }
 
 .descripción {
@@ -248,7 +249,7 @@ main section ul li form label {
     en el caso de que buscara una película o serie en específico que sí se encuentre en el sitio 
     (no un género como el caso que dejamos visible en el html)*/
 
-#portadas {
+.portadas {
     width: 100%;
 }
 
@@ -387,7 +388,7 @@ footer h3 {
         padding: 15px;
     }
     
-    .portada {
+    #portada {
         max-width: none;
         height: 336px;
         padding: 0 0 15px 0;

@@ -14,7 +14,6 @@ window.addEventListener("load", function(){
 
         for (let i = 0; i < datos.genres.length; i++) {
             document.querySelector(".contenedor-géneros1").innerHTML += `
-            
                 <article>
                     <div>
                         <div class="nombre-estreno">
@@ -41,7 +40,6 @@ window.addEventListener("load", function(){
 
         for (let i = 0; i < datos.genres.length; i++) {
             document.querySelector(".contenedor-géneros2").innerHTML += `
-        
                 <article>
                     <div>
                         <a href="detallegeneros.html"></a>   

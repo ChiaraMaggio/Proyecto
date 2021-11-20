@@ -23,7 +23,7 @@ window.addEventListener("load", function(){
             document.querySelector("#contenedor-artículo1").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -51,7 +51,7 @@ window.addEventListener("load", function(){
             document.querySelector("#contenedor-artículo2").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -81,7 +81,7 @@ window.addEventListener("load", function(){
             document.querySelector("#contenedor-artículo3").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -109,7 +109,7 @@ window.addEventListener("load", function(){
             document.querySelector("#contenedor-artículo4").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].title}"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
@@ -139,7 +139,7 @@ window.addEventListener("load", function(){
             document.querySelector("#contenedor-artículo5").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <a href="detail-movie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 1"></a>
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 1"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].title}</h4>
                             <p>${datos.results[i].release_date}</p>
@@ -167,7 +167,7 @@ window.addEventListener("load", function(){
             document.querySelector("#contenedor-artículo6").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <a href="detail-serie.html?id=${datos.results[i].id}"><img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 2"></a>
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="poster 2"></a>
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].name}</h4>
                             <p>${datos.results[i].first_air_date}</p>
