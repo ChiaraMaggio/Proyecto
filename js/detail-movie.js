@@ -57,10 +57,6 @@ window.addEventListener("load", function () {
                 </div>
                 
             `;
-       
-
-
-        /* TODO LO DE ABAJO HAY QUE REVISAR PORQUE NO FUNCIONA. EN LO DE ARRIBA NO HACER MÁS CAMBIOS. */
 
         /* Selector para el hipervínculo de favoritos */
      
