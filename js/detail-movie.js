@@ -1,16 +1,18 @@
-window.addEventListener(`load`, function () {
+window.addEventListener("load", function () {
 
-    //Array para poder almacenar los ID de las películas que vayan a favoritos.
+    /* Array para poder almacenar los id de las películas que vayan a favoritos */
+    
     let favoritos = [];
 
-    //Acceso QueryString
+    /* Acceso QueryString */
 
     let queryString = location.search;
     let objetoQueryString = new URLSearchParams(queryString);
     let id = objetoQueryString.get('id');
     console.log(id);
 
-    //Fetch
+    /* Fetch */
+
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=5176e8222efbe559636bd80e7f2092f9`)
         .then(function (response) {
             return response.json();
@@ -19,72 +21,72 @@ window.addEventListener(`load`, function () {
 
             console.log(datos);
 
-            document.querySelector(`.titulo-detalle`).innerHTML += `
-            <div class="contenedor-main">
-            <h2> ${datos.title} </h2>
-            </div>
-        `
-            document.querySelector(`.contenedor-detalles`).innerHTML += `
-                <div class="portada">
-                    <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${datos.poster_path}" alt="Photo"
+            document.querySelector("#título-detalle").innerText += `${datos.original_title}`;
+
+            document.querySelector(".contenedor-detalles").innerHTML += `
+                <div id="portada">
+                    <img class="portadas" src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="Portada de ${datos.original_title}"
                 </div>
-                <div class="contenedor-desc-lis">
-                    <p class="descripción">${datos.overwiew}</p>
-                    <ul>
-                        <li class="lista">
-                            <h4> Fecha de estreno: ${datos.release_date} </h4>
-                            <span> </span>
-                        </li>
-                        <li class="lista">
-                            <h4> Duración: </h4>
-                            <span>${datos.runtime} minutes </span>
-                        </li>
-                        <li class="lista">
-                            <span><a href="detallegeneros.html"> ${datos.genres[3]}.name </a></span>                      
-                        </li>
-                        <li class="lista">
-                            <h4> Calificación:</h4>
-                            <span> ${datos.vote_average}</span>
-                        </li>
-                        <li class="lista">
-                            <h4> Producción:${datos.production_companies[4]} </h4>
-                            <span></span>
-                        </li>
-                        <li class="lista">
+            `;
 
-                    /* <form action="favoritos.html" method="GET" class="form-fav">
-                        <label><h4>Añadir a Mi lista</h4></label>
-                        <button type="submit" class="fav"><i class="fas fa-heart"></i></button>  */
-
-
-                        
-                /div>
-     `
-        }).catch(function(error){
-            console.log(`El error fue: ${error}`)
+            document.querySelector(".contenedor-lis-desc").innerHTML += `
+                <p class="descripción">${datos.overview}</p>
+                <ul>
+                    <li class="lista"> 
+                        <h4>Estreno: </h4>
+                        <span>${datos.release_date} </span>
+                    </li>
+                    <li class="lista"> 
+                        <h4>Duración: </h4>
+                        <span>${datos.runtime} minutos</span>
+                    </li>
+                    <li class="lista">
+                        <a href="generos.html"><h4>Género: </h4></a>
+                        <span><a href="detallegeneros.html?id=${datos.genres[0].id}">${datos.genres[0].name}</a></span>
+                    </li>
+                    <li class="lista"> 
+                        <h4>Calificación: </h4>
+                        <span>${datos.vote_average}</span> 
+                    </li>
+                    <li class="lista"> 
+                        <h4>Productora: </h4>
+                        <span>${datos.production_companies[0].name}</span> 
+                    </li>
+                </ul>
+            `;
+        })
+        .catch(function(error){
+            console.log(`El error fue: ${error}`);
         })
 
-    //Selector para el botón de favoritos.
-     let buttonFav = document.querySelector('.fav')
 
-    //Local Storage
+        /* TODO LO DE ABAJO HAY QUE REVISAR PORQUE NO FUNCIONA. EN LO DE ARRIBA NO HACER MÁS CAMBIOS. */
 
-     if (localStorage.getItem('favoritosToString') != null) {
-        favoritos = JSON.parse(localStorage.getItem('favoritosToString'));
+    /* Selector para el hipervínculo de favoritos */
+     
+    let buttonFav = document.querySelector(".fav");
+    console.log(buttonFav);
+
+    /* Local Storage */
+
+    if (localStorage.getItem('favString') != null) {
+        favoritos = JSON.parse(localStorage.getItem('favString'));
+
+        /* cambios en el texto del hipervínculo para avisar al usuario */
+
         if (favoritos.includes(id)) {
-            buttonFav.innerHTML = `Remover de favoritos`;
+            buttonFav.innerHTML = "Remover de favoritos";
         } else {
-            buttonFav.innerHTML = `Agregar a favoritos`;
+            buttonFav.innerHTML = "Agregar a favoritos";
         }
     }
- 
-    //Evento para el botón de agregar o remover.
 
+    /* Evento para el hipervínculo de agregar o remover */
 
     buttonFav.addEventListener('click', function (e) {
 
-        // e.preventDefault(); En caso de ser un hipervínculo (etiquetas <a href="">Enlace</a>)
-
+        /* chequear si la película está o no en el array de favoritos */
+        
         if (favoritos.includes(id)) {
             favoritos.splice(favoritos.indexOf(id, 1));
             buttonFav.innerHTML = `Agregar a favoritos`;
@@ -93,11 +95,7 @@ window.addEventListener(`load`, function () {
             buttonFav.innerHTML = `Remover de favoritos`;
         }
 
-        localStorage.setItem('favoritosToString', JSON.stringify(favoritos));
+        localStorage.setItem('favString', JSON.stringify(favoritos));
         console.log(localStorage);
-
-    })
-
-   
+    }) 
 })
-/* https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${datos.poster.path} */

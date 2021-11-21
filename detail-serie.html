@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="js/detail-serie.js"></script>
     <script src="js/validacion.js"></script>
     <title>Detalle Series</title>
 </head>
@@ -44,49 +45,47 @@
 
     <main>
         <div class="contenedor-main">
-            <h2 id="título-detalle">LOKI (2021)</h2>
+            <h2 id="título-detalle"></h2>
             <section>
                 <div class="contenedor-detalles">
-                    <div class="portada">
-                        <img src="img/Posters series/loki.jpg" alt="portada">
-                    </div>
-                    <div class="contenedor-desc-lis">
-                        <p class="descripción">Loki es llevado ante la misteriosa organización llamada Autoridad de Variación Temporal después de robar el Cubo Cósmico durante los eventos de Avengers: Endgame (2019). 
-                            Se le da a elegir entre enfrentarse a la eliminación de la realidad o ayudar contra una amenaza mayor. 
-                            Por lo tanto, Loki termina viajando a través del tiempo, alterando la historia humana.</p>                      
-                        <ul>
-                            <li class="lista"> 
-                                <h4>Reparto:</h4>
-                                <span>Tom Hiddleston, Owen Wilson, Sophia Di Martino, Gugu Mbatha-Raw, Jonathan Majors, Richard E. Grant, Sasha Lane, Cailey Fleming, Josh Fadem, Tessa Thompson</span>
-                            </li>
-                            <li class="lista"> 
-                                <h4>Duración:</h4>
-                                <span>1 temporada (6 episodios)</span>
-                            </li>
-                            <li class="lista">
-                                <a href="generos.html"><h4>Género :</h4></a>
-                                <span><a href="detallegeneros.html">Ciencia ficción/acción</a></span>
-                            </li>
-                            <li class="lista"> 
-                                <h4>Calificación:</h4>
-                                <span>9.6/10</span> 
-                            </li>
-                            <li class="lista"> 
-                                <h4>Director:</h4>
-                                <span>Kate Herron</span> 
-                            </li>
-                            <li class="lista">
-                                <form action="favoritos.html" method="GET" class="form-fav">
-                                    <label><h4>Añadir a Mi lista</h4></label>
-                                    <!-- <input type="checkbox" id="favoritos" name="favoritos" value="Maze Runner (2014)"> -->
-                                    <button type="submit"><i class="fas fa-heart"></i></button> 
-                                
-                                </form>           
-                            </li>
-                        </ul>
+                    <!-- <div id="portada">
+                        <img class="portadas" src="img/Posters series/loki.jpg" alt="Portada">
+                    </div> -->
+                    <div class="contenedor-lis-button">
+                        <div class="contenedor-lis-desc">
+                            <!-- <p class="descripción">Loki es llevado ante la misteriosa organización llamada Autoridad de Variación Temporal después de robar el Cubo Cósmico durante los eventos de Avengers: Endgame (2019). 
+                                Se le da a elegir entre enfrentarse a la eliminación de la realidad o ayudar contra una amenaza mayor. 
+                                Por lo tanto, Loki termina viajando a través del tiempo, alterando la historia humana.</p>                      
+                            <ul>
+                                <li class="lista"> 
+                                    <h4>Estreno:</h4>
+                                    <span>2021</span>
+                                </li>
+                                <li class="lista"> 
+                                    <h4>Duración:</h4>
+                                    <span>1 temporada (6 episodios)</span>
+                                </li>
+                                <li class="lista">
+                                    <a href="generos.html"><h4>Género :</h4></a>
+                                    <span><a href="detallegeneros.html">Ciencia ficción/acción</a></span>
+                                </li>
+                                <li class="lista"> 
+                                    <h4>Calificación:</h4>
+                                    <span>9.6/10</span> 
+                                </li>
+                                <li class="lista"> 
+                                    <h4>Productora:</h4>
+                                    <span>Kate Herron</span> 
+                                </li>
+                            </ul> -->
+                        </div>
+                        <div class="contenedor-button-fav">
+                            <button class="fav">Añadir a favoritos</button>
+                        </div>
                     </div>
                 </div>                                 
             </section>
+
             <!-- <h2 id="tráiler">TRÁILER</h2>
             <section>
                 <div class="caja-tráiler">
@@ -94,7 +93,6 @@
                 </div> 
             </section> -->
         </div>
-
     </main>
 
     <footer>
@@ -108,7 +106,5 @@
         </div>
     </footer>
     </div>
-
-    <script type="text/javascript" src="js/detail-serie.js"></script>
 </body>
 </html>

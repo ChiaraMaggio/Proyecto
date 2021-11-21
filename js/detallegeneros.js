@@ -12,7 +12,6 @@ window.addEventListener("load", function(){
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         console.log(datos.results);  
 
@@ -20,7 +19,7 @@ window.addEventListener("load", function(){
             document.querySelector(".contenedor-géneros").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].original_title}">   
+                        <a href="detail-movie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].original_title}"></a>   
                         <div class="nombre-estreno">
                         <h4>${datos.results[i].original_title}</h4>
                         <p>${datos.results[i].release_date}</p>
@@ -30,7 +29,6 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })        
@@ -47,7 +45,7 @@ window.addEventListener("load", function(){
             document.querySelector(".contenedor-géneros").innerHTML += `
                 <article class="artículo-género">
                     <div>
-                        <img id="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].original_name}">   
+                        <a href="detail-serie.html?id=${datos.results[i].id}"><img class="portadas" src="https://image.tmdb.org/t/p/w200${datos.results[i].poster_path}" alt="Portada de ${datos.results[i].original_name}"></a>    
                         <div class="nombre-estreno">
                             <h4>${datos.results[i].original_name}</h4>
                             <p>${datos.results[i].first_air_date}</p>

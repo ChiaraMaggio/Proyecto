@@ -164,14 +164,13 @@ main section h3 {
 
 .contenedor-detalles {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 15px 60px;
 }
 
-.portada {
-    max-width: 28.24%;
-    height: 336px;
+#portada {
+    min-width: 30%;
 }
 
 .descripción {
@@ -182,7 +181,7 @@ main section h3 {
     font-family:'Roboto', sans-serif;
 }
 
-.contenedor-desc-lis {
+.contenedor-lis-button {
     flex-direction: column;
 }
 
@@ -204,9 +203,8 @@ ul li h4 {
     padding: 0 0 0 10px;
 }
 
-.form-fav {
-    display: flex;
-    flex-direction: row;
+.contenedor-button-fav {
+    padding: 0 0 0 10px;
 }
 
 /* #tráiler {
@@ -244,13 +242,13 @@ main section ul li form label {
     background-color: #5AE15A;
 }
 
+.portadas {
+    width: 100%;
+}
+
     /* la siguiente clase es para ocultar otros ejemplos de cómo podrían visualizarse los resultados de busqueda del usuario 
     en el caso de que buscara una película o serie en específico que sí se encuentre en el sitio 
     (no un género como el caso que dejamos visible en el html)*/
-
-#portadas {
-    width: 100%;
-}
 
 .ejemplos-resultados {
     display: none;
@@ -387,11 +385,11 @@ footer h3 {
         padding: 15px;
     }
     
-    .portada {
+    /* #portada {
         max-width: none;
         height: 336px;
         padding: 0 0 15px 0;
-    }
+    } */
 
     .descripción {
         font-size: 15px;
@@ -413,6 +411,10 @@ footer h3 {
     .lista {
         padding: 0 0 2px 0;
         flex-direction: column;
+    }
+
+    .contenedor-button-fav {
+        padding: 0;
     }
 
     /* 
