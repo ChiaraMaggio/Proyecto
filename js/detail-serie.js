@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+   
     /* Array para poder almacenar los id de las películas que vayan a favoritos */
     
     let favoritos = [];
@@ -35,6 +36,15 @@ window.addEventListener("load", function () {
                                     <h4>Estreno:</h4>
                                     <span>${datos.first_air_date} </span>
                                 </li>
+                                <li class="lista"> 
+                                    <h4>Temporadas:</h4>
+                                    <span>${datos.number_of_seasons} </span>
+                                </li>
+                                <li class="lista"> 
+                                    <h4>Episodios:</h4>
+                                    <span>${datos.number_of_episodes} </span>
+                                </li>
+                                
                                 <li class="lista"> 
                                     <h4>Duración de cada episodio:</h4>
                                     <span>${datos.episode_run_time} minutos</span>
