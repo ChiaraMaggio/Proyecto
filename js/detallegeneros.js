@@ -6,14 +6,14 @@ window.addEventListener("load", function(){
     let objetoQueryString = new URLSearchParams(queryString);
     let busqueda = objetoQueryString.get("id");
 
-    /* fetch sección 1 */
+    /* fetch sección películas */
 
     fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${busqueda}&api_key=a114d2c8656f1a238841af09c2a4f418`)
     .then(function(response){
         return response.json();
     })
     .then(function(datos){
-        console.log(datos.results);  
+        console.log(datos.results);
 
         for (let i = 0; i < datos.results.length; i++) {
             document.querySelector(".contenedor-géneros").innerHTML += `
@@ -33,6 +33,7 @@ window.addEventListener("load", function(){
         console.log(`El error fue: ${error}`);
     })        
     
+    /* fetch sección series */
 
     fetch(`https://api.themoviedb.org/3/discover/tv?with_genres=${busqueda}&api_key=a114d2c8656f1a238841af09c2a4f418`)
     .then(function(response){
