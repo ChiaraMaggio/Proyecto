@@ -17,7 +17,7 @@ window.addEventListener("load", function(){
                 <article>
                     <div>
                         <div class="nombre-estreno">
-                        <a href="detallegeneros.html?id=${datos.genres[i].id}"><h3>${datos.genres[i].name}</h3></a>
+                        <a href="detallegeneros.html?id=${datos.genres[i].id}&name=${datos.genres[i].name}&tipo=tv"><h3>${datos.genres[i].name}</h3></a>
                         </div>
                     </div>
                 </article>   
@@ -44,7 +44,7 @@ window.addEventListener("load", function(){
                     <div>
                         <a href="detallegeneros.html"></a>   
                         <div class="nombre-estreno">
-                        <a href="detallegeneros.html?id=${datos.genres[i].id}"><h3>${datos.genres[i].name}</h3></a>
+                        <a href="detallegeneros.html?id=${datos.genres[i].id}&name=${datos.genres[i].name}&tipo=tv"><h3>${datos.genres[i].name}</h3></a>
                         </div>
                     </div>
                 </article>   
