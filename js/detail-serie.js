@@ -58,6 +58,39 @@ window.addEventListener("load", function () {
             console.log(`El error fue: ${error}`);
         })
     
+         /* Selector para el hipervínculo de favoritos */
+     
+    let buttonFav = document.querySelector(".fav"); 
+    /*  console.log(buttonFav); */
+ 
+     /* Local Storage */
+     if (localStorage.getItem('favoritosString') != null) { 
+         favoritos = JSON.parse(localStorage.getItem('favoritosString')); 
+ 
+         /* cambios en el texto del hipervínculo para avisar al usuario */ //Esto es para que quede seteado, más allá del evento de hacer click, si el ID está o no. 
+         
+         if (favoritos.includes(id)) {
+             buttonFav.innerHTML = "Remover de favoritos"; 
+         } else {
+             buttonFav.innerHTML = "Agregar a favoritos";
+         }
+     }
+ 
+     /* Evento para el hipervínculo de agregar o remover */
+          buttonFav.addEventListener('click', function (e) {
+ 
+         /* chequear si la película está o no en el array de favoritos */
+         if (favoritos.includes(id)) { 
+             favoritos.splice(favoritos.indexOf(id, 1));
+             buttonFav.innerHTML = `Agregar a favoritos`;
+         } else {
+             favoritos.push(id); 
+             buttonFav.innerHTML = `Remover de favoritos`; 
+         }
+ 
+         localStorage.setItem('favoritosString', JSON.stringify(favoritos));
+         console.log(localStorage);
+     }) 
 })
 
 

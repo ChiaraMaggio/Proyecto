@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
 
-    /* Array para poder almacenar los id de las películas que vayan a favoritos */
+    /* Array para poder almacenar los id de las películas que vayan a favoritos en el localstorage */
     
     let favoritos = [];
 
@@ -30,6 +30,7 @@ window.addEventListener("load", function () {
             `;
 
             document.querySelector(".contenedor-lis-desc").innerHTML += `
+            <div class="contenedor-lis-desc">
                 <p class="descripción">${datos.overview}</p>
                 <ul>
                     <li class="lista"> 
@@ -53,49 +54,52 @@ window.addEventListener("load", function () {
                         <span>${datos.production_companies[0].name}</span> 
                     </li>
                 </ul>
+                </div>
+                
             `;
-        })
-        .catch(function(error){
-            console.log(`El error fue: ${error}`);
-        })
+       
 
 
         /* TODO LO DE ABAJO HAY QUE REVISAR PORQUE NO FUNCIONA. EN LO DE ARRIBA NO HACER MÁS CAMBIOS. */
 
-    /* Selector para el hipervínculo de favoritos */
+        /* Selector para el hipervínculo de favoritos */
      
-    let buttonFav = document.querySelector(".fav");
-    console.log(buttonFav);
+        let buttonFav = document.querySelector(".fav"); 
+         /*  console.log(buttonFav); */
 
-    /* Local Storage */
+         /* Local Storage */
+        if (localStorage.getItem('favoritosString') != null) { 
+        favoritos = JSON.parse(localStorage.getItem('favoritosString')); 
 
-    if (localStorage.getItem('favString') != null) {
-        favoritos = JSON.parse(localStorage.getItem('favString'));
-
-        /* cambios en el texto del hipervínculo para avisar al usuario */
-
-        if (favoritos.includes(id)) {
-            buttonFav.innerHTML = "Remover de favoritos";
-        } else {
-            buttonFav.innerHTML = "Agregar a favoritos";
-        }
-    }
-
-    /* Evento para el hipervínculo de agregar o remover */
-
-    buttonFav.addEventListener('click', function (e) {
-
-        /* chequear si la película está o no en el array de favoritos */
+        /* cambios en el texto del hipervínculo para avisar al usuario */ //Esto es para que quede seteado, más allá del evento de hacer click, si el ID está o no. 
         
         if (favoritos.includes(id)) {
-            favoritos.splice(favoritos.indexOf(id, 1));
+            buttonFav.innerHTML = `Remover de favoritos`; 
+        } else {
+            buttonFav.innerHTML = `Agregar a favoritos`;
+        }
+         }
+
+        /* Evento para el hipervínculo de agregar o remover */
+         buttonFav.addEventListener('click', function (e) {
+
+        /* chequear si la película está o no en el array de favoritos */
+        if (favoritos.includes(id)){ 
+            favoritos.splice(favoritos.indexOf(id),1);
             buttonFav.innerHTML = `Agregar a favoritos`;
         } else {
-            favoritos.push(id);
-            buttonFav.innerHTML = `Remover de favoritos`;
+            favoritos.push(id); 
+            buttonFav.innerHTML = `Remover de favoritos`; 
         }
 
-        localStorage.setItem('favString', JSON.stringify(favoritos));
+        localStorage.setItem('favoritosString', JSON.stringify(favoritos));
         console.log(localStorage);
-    }) 
-})
+        }) //Cierra evento
+        }) //cierra segundo then
+
+
+        .catch(function(error){
+            console.log(`El error fue: ${error}`);
+        })
+ }) //Cierra windo.event
+        
