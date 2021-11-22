@@ -71,8 +71,8 @@ window.addEventListener("load", function () {
         /*  console.log(buttonFav); */
 
         /* Local Storage */
-       if (localStorage.getItem('favoritosString') != null) { 
-       favoritos = JSON.parse(localStorage.getItem('favoritosString')); 
+       if (localStorage.getItem('favSerieString') != null) { 
+       favoritos = JSON.parse(localStorage.getItem('favSerieString')); 
 
        /* cambios en el texto del hipervínculo para avisar al usuario */ //Esto es para que quede seteado, más allá del evento de hacer click, si el ID está o no. 
        
@@ -95,7 +95,7 @@ window.addEventListener("load", function () {
            buttonFav.innerHTML = `Remover de favoritos`; 
        }
 
-       localStorage.setItem('favoritosString', JSON.stringify(favoritos));
+       localStorage.setItem('favSerieString', JSON.stringify(favoritos));
        console.log(localStorage);
        }) //Cierra evento
        })//cierra segundo then
