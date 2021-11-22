@@ -55,7 +55,6 @@ window.addEventListener("load", function () {
                     </li>
                 </ul>
                 </div>
-                
             `;
 
         /* Selector para el hipervínculo de favoritos */
@@ -64,8 +63,8 @@ window.addEventListener("load", function () {
          /*  console.log(buttonFav); */
 
          /* Local Storage */
-        if (localStorage.getItem('favoritosString') != null) { 
-        favoritos = JSON.parse(localStorage.getItem('favoritosString')); 
+        if (localStorage.getItem('favMovieString') != null) { 
+        favoritos = JSON.parse(localStorage.getItem('favMovieString')); 
 
         /* cambios en el texto del hipervínculo para avisar al usuario */ //Esto es para que quede seteado, más allá del evento de hacer click, si el ID está o no. 
         
@@ -88,7 +87,7 @@ window.addEventListener("load", function () {
             buttonFav.innerHTML = `Remover de favoritos`; 
         }
 
-        localStorage.setItem('favoritosString', JSON.stringify(favoritos));
+        localStorage.setItem('favMovieString', JSON.stringify(favoritos));
         console.log(localStorage);
         }) //Cierra evento
         }) //cierra segundo then
