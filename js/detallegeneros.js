@@ -9,14 +9,14 @@ window.addEventListener("load", function(){
     let nombre = objetoQueryString.get("name")
     let urlApi;
 
-    if(tipo == "movie"){
+    if(tipo == "películas"){
         urlApi = `https://api.themoviedb.org/3/discover/movie?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`;
     }else {
         urlApi = `https://api.themoviedb.org/3/discover/tv?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`
     }
     /* fetch sección películas */
 
-    fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(urlApi)
     .then(function(response){
         return response.json();
     })
@@ -25,6 +25,10 @@ window.addEventListener("load", function(){
         
         document.querySelector(".título-h2").innerHTML =  `
             ${nombre}
+        `;
+
+        document.querySelector(".texto-verde").innerHTML = `
+            ${tipo}
         `;
 
         for (let i = 0; i < datos.results.length; i++) {

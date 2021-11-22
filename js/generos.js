@@ -17,7 +17,7 @@ window.addEventListener("load", function(){
                 <article>
                     <div>
                         <div class="nombre-estreno">
-                        <a href="detallegeneros.html?id=${datos.genres[i].id}&name=${datos.genres[i].name}&tipo=tv"><h3>${datos.genres[i].name}</h3></a>
+                        <a href="detallegeneros.html?id=${datos.genres[i].id}&name=${datos.genres[i].name}&tipo=películas"><h3>${datos.genres[i].name}</h3></a>
                         </div>
                     </div>
                 </article>   
@@ -41,10 +41,9 @@ window.addEventListener("load", function(){
         for (let i = 0; i < datos.genres.length; i++) {
             document.querySelector(".contenedor-géneros2").innerHTML += `
                 <article>
-                    <div>
-                        <a href="detallegeneros.html"></a>   
+                    <div>  
                         <div class="nombre-estreno">
-                        <a href="detallegeneros.html?id=${datos.genres[i].id}&name=${datos.genres[i].name}&tipo=tv"><h3>${datos.genres[i].name}</h3></a>
+                        <a href="detallegeneros.html?id=${datos.genres[i].id}&name=${datos.genres[i].name}&tipo=series"><h3>${datos.genres[i].name}</h3></a>
                         </div>
                     </div>
                 </article>   
