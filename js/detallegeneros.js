@@ -6,17 +6,20 @@ window.addEventListener("load", function(){
     let objetoQueryString = new URLSearchParams(queryString);
     let id = objetoQueryString.get("id");
     let tipo = objetoQueryString.get("tipo");
-    let nombre = objetoQueryString.get("name")
+    let nombre = objetoQueryString.get("name");
+    
+    /*
     let urlApi;
 
     if(tipo == "películas"){
         urlApi = `https://api.themoviedb.org/3/discover/movie?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`;
     }else {
         urlApi = `https://api.themoviedb.org/3/discover/tv?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`
-    }
+    } */
+
     /* fetch sección películas */
 
-    fetch(urlApi)
+    fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`)
     .then(function(response){
         return response.json();
     })
@@ -51,7 +54,7 @@ window.addEventListener("load", function(){
     
     /* fetch sección series */
 
-    /* fetch(`https://api.themoviedb.org/3/discover/tv?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`)
+    fetch(`https://api.themoviedb.org/3/discover/tv?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`)
     .then(function(response){
         return response.json();
     })
@@ -74,6 +77,5 @@ window.addEventListener("load", function(){
     })
     .catch(function(error){
         console.log(`El error fue: ${error}`);
-    })  */
-   
+    }) 
 })
