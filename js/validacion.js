@@ -2,7 +2,7 @@ window.addEventListener("load",function(){
 
     /* validar form */
 
-    let formulario = document.querySelector(".buscador");
+    let formulario = document.querySelector(".buscador"); 
     let campoBuscar = document.querySelector("[name=buscador]");
     let mensajeAlerta = document.querySelector(".alerta");
 
@@ -14,7 +14,7 @@ window.addEventListener("load",function(){
             mensajeAlerta.innerText = "Búsqueda vacía";
         }
         else if (campoBuscar.value.length < 3){
-            mensajeAlerta.innerHTML = "Ingrese al menos 3 caracteres";
+            mensajeAlerta.innerText = "Ingrese al menos 3 caracteres";
         }
         /* si no hay errores, el form se debe enviar */
         else {
