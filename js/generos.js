@@ -1,13 +1,11 @@
-
 window.addEventListener("load", function(){
     
-    /* fetch sección 1 */
+    /* fetch sección películas */
 
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=a114d2c8656f1a238841af09c2a4f418`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.genres);  
@@ -24,16 +22,16 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
+
+    /* fetch sección series */
 
     fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=a114d2c8656f1a238841af09c2a4f418`)
     .then(function(response){
         return response.json();
     })
-    
     .then(function(datos){
         
         console.log(datos.genres);
@@ -50,7 +48,6 @@ window.addEventListener("load", function(){
             `;
         }
     })
-
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })    

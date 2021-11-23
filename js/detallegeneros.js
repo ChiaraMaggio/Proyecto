@@ -15,7 +15,8 @@ window.addEventListener("load", function(){
         urlApi = `https://api.themoviedb.org/3/discover/movie?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`;
     }else {
         urlApi = `https://api.themoviedb.org/3/discover/tv?with_genres=${id}&api_key=a114d2c8656f1a238841af09c2a4f418`
-    } */
+    } 
+    */
 
     /* fetch sección películas */
 

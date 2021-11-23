@@ -1,11 +1,10 @@
-/* Clave de la API = a114d2c8656f1a238841af09c2a4f418 */
-
-const apiKey = "a114d2c8656f1a238841af09c2a4f418";
-
-/* Comillas invertidas = `` */
-/* Parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w200 */
-
 window.addEventListener("load", function(){
+
+    /* clave de la API = a114d2c8656f1a238841af09c2a4f418 */
+    const apiKey = "a114d2c8656f1a238841af09c2a4f418";
+    
+    /* comillas invertidas = `` */
+    /* parte inicial de la url de imágenes = https://image.tmdb.org/t/p/w200 */
     
     /* fetch sección populares */
 
@@ -163,7 +162,7 @@ window.addEventListener("load", function(){
         
         console.log(datos.results);
 
-        for (let i = 3; i < 8; i++) {
+        for (let i = 3; i < 8; i++) { /* cambiamos el valor de la variable inicial para evitar la repetición de algunas películas o series que ya aparecían en otros listados previos */
             document.querySelector("#contenedor-artículo6").innerHTML += `
                 <article class="artículo-género">
                     <div>

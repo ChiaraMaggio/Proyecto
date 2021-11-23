@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
     let busqueda = objetoQueryString.get("buscador");
 
         
-    /*fetch para resultados de películas*/
+    /* fetch para resultados de películas */
 
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=a114d2c8656f1a238841af09c2a4f418&query=${busqueda}&page=1`)
     .then(function(response){
@@ -47,7 +47,7 @@ window.addEventListener("load", function(){
         console.log(`El error fue ${error}`);
     })
 
-    /*fetch para resultados de series*/
+    /* fetch para resultados de series */
 
     fetch(`https://api.themoviedb.org/3/search/tv?api_key=a114d2c8656f1a238841af09c2a4f418&language=en-US&query=${busqueda}&page=1`)
     .then(function(response){
